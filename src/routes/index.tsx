@@ -13,7 +13,7 @@ export default function Home() {
     <ErrorBoundary fallback={(err) => <p>Error: {err.message}</p>}>
       <Suspense fallback={<p>Loading...</p>}>
         <article class={"home"}>
-          <Title>Home</Title>
+          <Title>Home - Project Hub</Title>
           <Hero />
           {/*<Help />*/}
           <Projects />

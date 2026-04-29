@@ -20,6 +20,18 @@ export default function NavMain() {
           <li><A href="/component-map" end={true}>Component Map</A></li>
         </Show>
       </ul>
+      <ul class={"nav-external"} aria-label={"External sites"}>
+        <li>
+          <a href={"https://sakura-sedaia.com"} target={"_blank"} rel={"noopener noreferrer"}>
+            Main Website
+          </a>
+        </li>
+        <li>
+          <a href={"https://wiki.sakura-sedaia.com"} target={"_blank"} rel={"noopener noreferrer"}>
+            Wiki
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }

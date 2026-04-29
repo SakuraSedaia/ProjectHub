@@ -197,6 +197,26 @@ div.viewport {
       }
 
     }
+
+    ul.nav-external {
+      position: fixed;
+      bottom: 2.25rem;
+      left: 0;
+      width: var(--nav-width);
+      border-top: 0.0625rem solid hsl(var(--border-color-val));
+      padding-top: 0.5rem;
+
+      li a {
+        font-size: 0.85rem;
+        color: var(--tx-secondary);
+
+        &:hover,
+        &:focus-visible {
+          color: var(--primary-color);
+          box-shadow: inset 4px 0 0 var(--primary-color);
+        }
+      }
+    }
   }
 
   .content {
