@@ -209,11 +209,58 @@ div.viewport {
       li a {
         font-size: 0.85rem;
         color: var(--tx-secondary);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .icon-bundle,
+        svg {
+          flex-shrink: 0;
+          width: 1em;
+          height: 1em;
+          margin-left: 1rem;
+        }
+
+        span {
+          text-indent: 0;
+          padding: 0;
+        }
 
         &:hover,
         &:focus-visible {
           color: var(--primary-color);
           box-shadow: inset 4px 0 0 var(--primary-color);
+        }
+      }
+
+      li.nav-external {
+        margin: 0.25rem 0.75rem 0.5rem;
+
+        a {
+          font-size: 0.95rem;
+          font-weight: 600;
+          color: var(--tx-secondary);
+          background-color: var(--bg-primary);
+          border-radius: 0.375rem;
+          padding: 0.5rem 0.75rem;
+          text-indent: 0;
+          box-shadow: none;
+          justify-content: center;
+          gap: 0.4rem;
+          transition: 0.1s ease, transform 0.1s ease;
+
+          .icon-bundle,
+          svg {
+            margin-left: 0;
+          }
+
+          &:hover,
+          &:focus-visible {
+            color: var(--tx-secondary);
+            background-color: var(--primary-color);
+            filter: brightness(1.1);
+            box-shadow: none;
+          }
         }
       }
     }

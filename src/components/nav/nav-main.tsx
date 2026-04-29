@@ -21,14 +21,19 @@ export default function NavMain() {
         </Show>
       </ul>
       <ul class={"nav-external"} aria-label={"External sites"}>
-        <li>
+        <li class={"nav-external"}>
           <a href={"https://sakura-sedaia.com"} target={"_blank"} rel={"noopener noreferrer"}>
-            Main Website
+            <span>Main Website</span>
           </a>
         </li>
-        <li>
+        <li class={"nav-external"}>
+          <a href={"https://sakura-sedaia.com/contact"} target={"_blank"} rel={"noopener noreferrer"}>
+            <span>Contact</span>
+          </a>
+        </li>
+        <li class={"nav-external"}>
           <a href={"https://wiki.sakura-sedaia.com"} target={"_blank"} rel={"noopener noreferrer"}>
-            Wiki
+            <span>Wiki</span>
           </a>
         </li>
       </ul>
