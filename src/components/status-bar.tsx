@@ -10,6 +10,18 @@ export default function StatusBar() {
   return (
     <footer class={"status-bar"}>
       <div class={"copyright"}>&copy; {year()} Sedaia Designs. All Rights Reserved.</div>
+      <div class={"license-note"}>
+        Website codebase licensed under{" "}
+        <a
+          href={"https://opensource.org/license/bsd-3-clause"}
+          class={"link"}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
+        >
+          BSD 3-Clause
+        </a>
+        ; hosted projects are licensed separately (see each project's repository).
+      </div>
       <div class={"powered-by"}>
         Powered by{" "}
         <a href={"https://solidjs.com"} class={"link"} target={"_blank"} rel={"noopener noreferrer"}>

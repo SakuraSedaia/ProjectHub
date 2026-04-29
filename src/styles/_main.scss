@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 :root {
-  --nav-width: 12rem;
+  --nav-width: 14rem;
 }
 
 body {
@@ -50,8 +50,13 @@ div.viewport {
     justify-content: space-between;
     gap: 1rem;
     height: 3em;
-    background-image: linear-gradient(to bottom, hsl(309 94% 5%), hsl(312 91% 4%));
-    border-bottom: 0.0625rem solid var(--border-color);
+    background-color: hsl(var(--bg-secondary-val));
+    background-image: linear-gradient(
+      to bottom,
+      hsl(var(--bg-secondary-val)),
+      hsl(var(--bg-primary-val) / 0.3)
+    );
+    border-bottom: 0.0625rem solid hsl(var(--border-color-val));
     padding: 0 1rem;
     z-index: 10;
     @include shadow;
@@ -128,7 +133,12 @@ div.viewport {
 
   nav.nav-main {
     border-right: 1px solid var(--border-color);
-    background-color: var(--bg-secondary);
+    background-color: hsl(var(--bg-secondary-val));
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--bg-secondary-val)),
+      hsl(var(--bg-primary-val) / 0.2)
+    );
     padding: 1rem 1rem 1rem 0;
     height: 100%;
     grid-column: 1 / 2;
