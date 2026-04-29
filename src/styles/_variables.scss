@@ -1,0 +1,307 @@
+:root {
+  // Colors
+  /* Slate */
+  --color-slate-50-val: 210 40% 98%;
+  --color-slate-100-val: 210 40% 96%;
+  --color-slate-200-val: 214 32% 91%;
+  --color-slate-300-val: 213 27% 84%;
+  --color-slate-400-val: 215 20% 65%;
+  --color-slate-500-val: 215 16% 47%;
+  --color-slate-600-val: 215 19% 35%;
+  --color-slate-700-val: 215 25% 27%;
+  --color-slate-800-val: 217 33% 17%;
+  --color-slate-900-val: 222 47% 11%;
+  --color-slate-950-val: 222 47% 6%;
+  /* Gray */
+  --color-gray-50-val: 210 20% 98%;
+  --color-gray-100-val: 210 20% 96%;
+  --color-gray-200-val: 214 16% 91%;
+  --color-gray-300-val: 213 14% 84%;
+  --color-gray-400-val: 215 10% 65%;
+  --color-gray-500-val: 215 8% 47%;
+  --color-gray-600-val: 215 10% 35%;
+  --color-gray-700-val: 215 13% 27%;
+  --color-gray-800-val: 217 17% 17%;
+  --color-gray-900-val: 222 24% 11%;
+  --color-gray-950-val: 222 24% 6%;
+  /* Zinc */
+  --color-zinc-50-val: 0 0% 98%;
+  --color-zinc-100-val: 240 5% 96%;
+  --color-zinc-200-val: 240 6% 90%;
+  --color-zinc-300-val: 240 5% 84%;
+  --color-zinc-400-val: 240 5% 65%;
+  --color-zinc-500-val: 240 6% 47%;
+  --color-zinc-600-val: 240 5% 34%;
+  --color-zinc-700-val: 240 5% 26%;
+  --color-zinc-800-val: 240 4% 16%;
+  --color-zinc-900-val: 240 6% 10%;
+  --color-zinc-950-val: 240 10% 4%;
+  /* Neutral */
+  --color-neutral-50-val: 0 0% 98%;
+  --color-neutral-100-val: 0 0% 96%;
+  --color-neutral-200-val: 0 0% 90%;
+  --color-neutral-300-val: 0 0% 83%;
+  --color-neutral-400-val: 0 0% 64%;
+  --color-neutral-500-val: 0 0% 45%;
+  --color-neutral-600-val: 0 0% 32%;
+  --color-neutral-700-val: 0 0% 25%;
+  --color-neutral-800-val: 0 0% 15%;
+  --color-neutral-900-val: 0 0% 9%;
+  --color-neutral-950-val: 0 0% 4%;
+  /* Stone */
+  --color-stone-50-val: 60 9% 98%;
+  --color-stone-100-val: 60 5% 96%;
+  --color-stone-200-val: 60 5% 90%;
+  --color-stone-300-val: 60 4% 83%;
+  --color-stone-400-val: 60 3% 64%;
+  --color-stone-500-val: 24 5% 45%;
+  --color-stone-600-val: 24 5% 33%;
+  --color-stone-700-val: 24 5% 25%;
+  --color-stone-800-val: 24 6% 15%;
+  --color-stone-900-val: 24 10% 10%;
+  --color-stone-950-val: 24 10% 4%;
+  /* Red */
+  --color-red-50-val: 0 100% 98%;
+  --color-red-100-val: 0 100% 95%;
+  --color-red-200-val: 0 100% 90%;
+  --color-red-300-val: 0 100% 81%;
+  --color-red-400-val: 0 91% 71%;
+  --color-red-500-val: 0 84% 60%;
+  --color-red-600-val: 0 72% 51%;
+  --color-red-700-val: 0 74% 42%;
+  --color-red-800-val: 0 70% 35%;
+  --color-red-900-val: 0 63% 31%;
+  --color-red-950-val: 0 75% 15%;
+  /* Orange */
+  --color-orange-50-val: 33 100% 98%;
+  --color-orange-100-val: 33 100% 95%;
+  --color-orange-200-val: 32 100% 89%;
+  --color-orange-300-val: 32 100% 79%;
+  --color-orange-400-val: 31 100% 65%;
+  --color-orange-500-val: 24 100% 58%;
+  --color-orange-600-val: 20 92% 49%;
+  --color-orange-700-val: 18 85% 40%;
+  --color-orange-800-val: 16 78% 33%;
+  --color-orange-900-val: 15 75% 28%;
+  --color-orange-950-val: 14 83% 14%;
+  /* Amber */
+  --color-amber-50-val: 48 100% 98%;
+  --color-amber-100-val: 48 100% 94%;
+  --color-amber-200-val: 48 100% 88%;
+  --color-amber-300-val: 48 100% 76%;
+  --color-amber-400-val: 45 100% 60%;
+  --color-amber-500-val: 38 92% 50%;
+  --color-amber-600-val: 31 92% 45%;
+  --color-amber-700-val: 25 89% 36%;
+  --color-amber-800-val: 21 82% 31%;
+  --color-amber-900-val: 20 74% 27%;
+  --color-amber-950-val: 20 88% 13%;
+  /* Yellow */
+  --color-yellow-50-val: 60 100% 98%;
+  --color-yellow-100-val: 60 100% 94%;
+  --color-yellow-200-val: 60 100% 87%;
+  --color-yellow-300-val: 58 100% 73%;
+  --color-yellow-400-val: 53 98% 57%;
+  --color-yellow-500-val: 48 96% 47%;
+  --color-yellow-600-val: 43 96% 41%;
+  --color-yellow-700-val: 36 92% 33%;
+  --color-yellow-800-val: 33 82% 28%;
+  --color-yellow-900-val: 28 73% 26%;
+  --color-yellow-950-val: 26 83% 13%;
+  /* Lime */
+  --color-lime-50-val: 75 100% 98%;
+  --color-lime-100-val: 79 100% 95%;
+  --color-lime-200-val: 81 100% 88%;
+  --color-lime-300-val: 82 100% 77%;
+  --color-lime-400-val: 83 100% 61%;
+  --color-lime-500-val: 84 100% 48%;
+  --color-lime-600-val: 84 100% 40%;
+  --color-lime-700-val: 84 100% 31%;
+  --color-lime-800-val: 84 100% 25%;
+  --color-lime-900-val: 84 100% 21%;
+  --color-lime-950-val: 84 100% 11%;
+  /* Green */
+  --color-green-50-val: 138 100% 98%;
+  --color-green-100-val: 141 83% 94%;
+  --color-green-200-val: 141 77% 88%;
+  --color-green-300-val: 142 74% 78%;
+  --color-green-400-val: 142 71% 63%;
+  --color-green-500-val: 142 71% 45%;
+  --color-green-600-val: 142 76% 36%;
+  --color-green-700-val: 142 72% 29%;
+  --color-green-800-val: 143 64% 24%;
+  --color-green-900-val: 144 61% 20%;
+  --color-green-950-val: 144 84% 10%;
+  /* Emerald */
+  --color-emerald-50-val: 150 100% 98%;
+  --color-emerald-100-val: 149 80% 95%;
+  --color-emerald-200-val: 152 76% 87%;
+  --color-emerald-300-val: 156 72% 75%;
+  --color-emerald-400-val: 158 64% 59%;
+  --color-emerald-500-val: 160 84% 39%;
+  --color-emerald-600-val: 161 94% 30%;
+  --color-emerald-700-val: 163 94% 24%;
+  --color-emerald-800-val: 163 88% 20%;
+  --color-emerald-900-val: 164 86% 16%;
+  --color-emerald-950-val: 165 92% 8%;
+  /* Teal */
+  --color-teal-50-val: 180 100% 98%;
+  --color-teal-100-val: 180 77% 95%;
+  --color-teal-200-val: 183 74% 87%;
+  --color-teal-300-val: 185 62% 74%;
+  --color-teal-400-val: 187 55% 57%;
+  --color-teal-500-val: 187 100% 38%;
+  --color-teal-600-val: 188 100% 31%;
+  --color-teal-700-val: 189 94% 26%;
+  --color-teal-800-val: 190 90% 21%;
+  --color-teal-900-val: 191 84% 18%;
+  --color-teal-950-val: 192 100% 8%;
+  /* Cyan */
+  --color-cyan-50-val: 180 100% 98%;
+  --color-cyan-100-val: 183 100% 95%;
+  --color-cyan-200-val: 185 96% 89%;
+  --color-cyan-300-val: 186 94% 78%;
+  --color-cyan-400-val: 188 91% 60%;
+  --color-cyan-500-val: 189 94% 43%;
+  --color-cyan-600-val: 191 91% 37%;
+  --color-cyan-700-val: 192 94% 30%;
+  --color-cyan-800-val: 193 94% 25%;
+  --color-cyan-900-val: 194 92% 21%;
+  --color-cyan-950-val: 195 100% 10%;
+  /* Sky */
+  --color-sky-50-val: 204 100% 98%;
+  --color-sky-100-val: 204 100% 95%;
+  --color-sky-200-val: 202 100% 91%;
+  --color-sky-300-val: 201 100% 83%;
+  --color-sky-400-val: 199 92% 70%;
+  --color-sky-500-val: 199 89% 48%;
+  --color-sky-600-val: 200 100% 37%;
+  --color-sky-700-val: 201 96% 30%;
+  --color-sky-800-val: 201 90% 26%;
+  --color-sky-900-val: 202 81% 22%;
+  --color-sky-950-val: 202 81% 11%;
+  /* Blue */
+  --color-blue-50-val: 214 100% 98%;
+  --color-blue-100-val: 214 100% 95%;
+  --color-blue-200-val: 213 100% 91%;
+  --color-blue-300-val: 212 100% 84%;
+  --color-blue-400-val: 211 96% 72%;
+  --color-blue-500-val: 217 91% 60%;
+  --color-blue-600-val: 221 83% 53%;
+  --color-blue-700-val: 224 76% 48%;
+  --color-blue-800-val: 226 71% 40%;
+  --color-blue-900-val: 226 64% 33%;
+  --color-blue-950-val: 226 73% 17%;
+  /* Indigo */
+  --color-indigo-50-val: 226 100% 98%;
+  --color-indigo-100-val: 227 100% 96%;
+  --color-indigo-200-val: 228 100% 92%;
+  --color-indigo-300-val: 230 100% 85%;
+  --color-indigo-400-val: 234 100% 75%;
+  --color-indigo-500-val: 239 84% 67%;
+  --color-indigo-600-val: 243 75% 59%;
+  --color-indigo-700-val: 245 58% 51%;
+  --color-indigo-800-val: 244 55% 41%;
+  --color-indigo-900-val: 244 47% 34%;
+  --color-indigo-950-val: 244 47% 18%;
+  /* Violet */
+  --color-violet-50-val: 250 100% 98%;
+  --color-violet-100-val: 251 100% 96%;
+  --color-violet-200-val: 251 100% 92%;
+  --color-violet-300-val: 252 100% 85%;
+  --color-violet-400-val: 255 92% 76%;
+  --color-violet-500-val: 258 90% 66%;
+  --color-violet-600-val: 262 83% 58%;
+  --color-violet-700-val: 263 70% 50%;
+  --color-violet-800-val: 263 60% 42%;
+  --color-violet-900-val: 263 52% 35%;
+  --color-violet-950-val: 265 61% 18%;
+  /* Purple */
+  --color-purple-50-val: 270 100% 99%;
+  --color-purple-100-val: 269 100% 97%;
+  --color-purple-200-val: 268 100% 93%;
+  --color-purple-300-val: 269 100% 87%;
+  --color-purple-400-val: 271 91% 74%;
+  --color-purple-500-val: 273 83% 60%;
+  --color-purple-600-val: 276 70% 51%;
+  --color-purple-700-val: 276 60% 42%;
+  --color-purple-800-val: 276 53% 35%;
+  --color-purple-900-val: 276 46% 29%;
+  --color-purple-950-val: 276 65% 15%;
+  /* Fuchsia */
+  --color-fuchsia-50-val: 289 100% 98%;
+  --color-fuchsia-100-val: 287 100% 96%;
+  --color-fuchsia-200-val: 288 100% 92%;
+  --color-fuchsia-300-val: 290 100% 85%;
+  --color-fuchsia-400-val: 293 91% 74%;
+  --color-fuchsia-500-val: 295 83% 58%;
+  --color-fuchsia-600-val: 297 70% 49%;
+  --color-fuchsia-700-val: 297 60% 41%;
+  --color-fuchsia-800-val: 297 53% 34%;
+  --color-fuchsia-900-val: 297 46% 28%;
+  --color-fuchsia-950-val: 297 65% 14%;
+  /* Pink */
+  --color-pink-50-val: 327 100% 98%;
+  --color-pink-100-val: 327 100% 96%;
+  --color-pink-200-val: 323 100% 91%;
+  --color-pink-300-val: 324 100% 85%;
+  --color-pink-400-val: 326 91% 74%;
+  --color-pink-500-val: 330 81% 60%;
+  --color-pink-600-val: 333 71% 51%;
+  --color-pink-700-val: 335 62% 42%;
+  --color-pink-800-val: 336 53% 35%;
+  --color-pink-900-val: 336 47% 29%;
+  --color-pink-950-val: 338 68% 15%;
+  /* Rose */
+  --color-rose-50-val: 355 100% 98%;
+  --color-rose-100-val: 355 100% 96%;
+  --color-rose-200-val: 356 100% 91%;
+  --color-rose-300-val: 358 100% 84%;
+  --color-rose-400-val: 360 91% 73%;
+  --color-rose-500-val: 350 89% 60%;
+  --color-rose-600-val: 344 80% 50%;
+  --color-rose-700-val: 339 70% 41%;
+  --color-rose-800-val: 335 62% 34%;
+  --color-rose-900-val: 333 55% 29%;
+  --color-rose-950-val: 335 77% 14%;
+  /* PyCharm branding colors */
+  --color-pycharm-green-val: 157 100% 42%;
+  --color-pycharm-yellow-val: 59 88% 52%;
+  --color-pycharm-blue-val: 192 100% 48%;
+  /* Blender branding colors */
+  --color-blender-orange-val: 31 100% 46%;
+  --color-blender-blue-val: 211 56% 34%;
+
+  // Semantic Theme Variables
+  --bg-primary-val: var(--color-zinc-950-val);
+  --tx-primary-val: var(--color-zinc-50-val);
+  --bg-secondary-val: var(--color-zinc-900-val);
+  --tx-secondary-val: var(--color-zinc-400-val);
+  --primary-color-val: var(--color-pink-400-val);
+  --border-color-val: var(--color-zinc-800-val);
+
+  --bg-primary: hsl(var(--bg-primary-val));
+  --tx-primary: hsl(var(--tx-primary-val));
+  --bg-secondary: hsl(var(--bg-secondary-val));
+  --tx-secondary: hsl(var(--tx-secondary-val));
+  --primary-color: hsl(var(--primary-color-val));
+  --border-color: hsl(var(--border-color-val));
+
+  // PyCharm Branding
+  --pycharm-green: hsl(var(--color-pycharm-green-val));
+  --pycharm-yellow: hsl(var(--color-pycharm-yellow-val));
+  --pycharm-blue: hsl(var(--color-pycharm-blue-val));
+
+  // Blender Branding
+  --blender-orange: hsl(var(--color-blender-orange-val));
+  --blender-blue: hsl(var(--color-blender-blue-val));
+}
+
+[data-theme='dark'] {
+  --bg-primary-val: var(--color-zinc-950-val);
+  --tx-primary-val: var(--color-zinc-50-val);
+  --bg-secondary-val: var(--color-zinc-900-val);
+  --tx-secondary-val: var(--color-zinc-400-val);
+  --primary-color-val: var(--color-pink-400-val);
+  --border-color-val: var(--color-zinc-800-val);
+}

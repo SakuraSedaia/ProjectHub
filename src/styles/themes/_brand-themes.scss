@@ -1,0 +1,35 @@
+// Modular brand theme classes
+// Apply on any container (e.g. an `<article>`) to retheme the subtree
+// using the corresponding product's branding colors.
+//
+// Each theme exposes:
+//   --brand-primary   : default accent color (e.g. links, headings underlines)
+//   --brand-hover     : accent color used for :hover / :focus states
+//   --brand-secondary : optional secondary accent
+//   --brand-tertiary  : optional tertiary accent
+//
+// Usage:
+//   <article class="theme-pycharm">...</article>
+//   <article class="theme-blender">...</article>
+
+.theme-pycharm {
+  // Override semantic primary with PyCharm green
+  --primary-color-val: var(--color-pycharm-green-val);
+  --primary-color: hsl(var(--primary-color-val));
+
+  // Brand accents
+  --brand-primary: var(--pycharm-green);
+  --brand-hover: var(--pycharm-blue);
+  --brand-secondary: var(--pycharm-yellow);
+  --brand-tertiary: var(--pycharm-blue);
+}
+
+.theme-blender {
+  // Override semantic primary with Blender orange
+  --primary-color-val: var(--color-blender-orange-val);
+  --primary-color: hsl(var(--primary-color-val));
+
+  --brand-primary: var(--blender-orange);
+  --brand-hover: var(--blender-blue);
+  --brand-secondary: var(--blender-blue);
+}
