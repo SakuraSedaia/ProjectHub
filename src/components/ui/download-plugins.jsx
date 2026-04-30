@@ -87,12 +87,20 @@ export default function DownloadPlugins(props) {
 	};
 
 	onMount(() => {
-		document.addEventListener("mousedown", handleClickOutside);
-		window.addEventListener("resize", updateIndicator);
-		updateIndicator();
+		if (typeof document !== 'undefined') {
+			document.addEventListener("mousedown", handleClickOutside);
+		}
+		if (typeof window !== 'undefined') {
+			window.addEventListener("resize", updateIndicator);
+			updateIndicator();
+		}
 		onCleanup(() => {
-			document.removeEventListener("mousedown", handleClickOutside);
-			window.removeEventListener("resize", updateIndicator);
+			if (typeof document !== 'undefined') {
+				document.removeEventListener("mousedown", handleClickOutside);
+			}
+			if (typeof window !== 'undefined') {
+				window.removeEventListener("resize", updateIndicator);
+			}
 		});
 	});
 

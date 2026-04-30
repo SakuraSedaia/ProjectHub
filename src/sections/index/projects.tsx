@@ -23,7 +23,7 @@ const projectCards = [
     description:
       "The flagship rig the SACR Interface is built around — a fully featured Minecraft character rig for animators and artists.",
     cta: "Learn more",
-    href: "/sacr-interface",
+    href: "https://www.sakura-sedaia.com/asset/sakura-character-rig",
     imageClass: "product-rig",
   },
   {

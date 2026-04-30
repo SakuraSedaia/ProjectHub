@@ -19,24 +19,19 @@ div.viewport {
   grid-template-columns: var(--nav-width) 1fr;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
-  transition: grid-template-columns 0.3s ease;
+  transition: grid-template-columns 0.3s ease, padding 0.3s ease;
 
-  &.sidebar-closed {
-    --nav-width: 0rem;
+    &.sidebar-closed {
+      padding-inline: 0;
+      --nav-width: 0rem;
 
-    nav.nav-main {
-      border-right-color: transparent;
-      padding-left: 0;
-      padding-right: 0;
-      overflow: hidden;
-
-      ul {
-        opacity: 0;
-        pointer-events: none;
-        width: 12rem;
+      nav.nav-main {
+        border-right-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
       }
     }
-  }
 
   .ribbon-header {
     grid-column: 1 / -1;
@@ -272,7 +267,11 @@ div.viewport {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    transition: padding 0.3s ease, border-right-color 0.3s ease;
+    transition: padding 0.3s ease, border-right-color 0.3s ease, width 0.3s ease, transform 0.3s ease;
+
+    &.sidebar-closed {
+        transform: translateX(-100%);
+    }
 
     ul {
       list-style: none;

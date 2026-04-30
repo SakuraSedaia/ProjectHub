@@ -29,6 +29,8 @@
     font-weight: 600;
     transition: background 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
 
+    text-decoration: none;
+
     &:hover {
       background: hsl(var(--color-pink-300-val));
       box-shadow: 0 0 0 1px hsl(var(--primary-color-val) / 0.4);
@@ -228,11 +230,6 @@
     overflow: hidden;
     box-shadow: 0 1px 3px hsl(0 0% 0% / 0.3);
     transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
-
-    &:hover {
-      box-shadow: 0 4px 16px hsl(var(--primary-color-val) / 0.25);
-      border-color: hsl(var(--primary-color-val) / 0.6);
-    }
 
     h3 {
       font-size: 1.05rem;

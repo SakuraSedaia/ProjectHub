@@ -11,7 +11,7 @@ const platforms: Record<SupportedPlatform, { label: string; src: string; href: s
   },
   pycharm: {
     label: "PyCharm",
-    src: "/images/platform-icons/pycharm/PyCharm_icon.svg",
+    src: "/images/platform-icons/pycharm/pycharm_logo.svg",
     href: "https://www.jetbrains.com/pycharm/",
   },
 };
