@@ -8,10 +8,13 @@ const socialLinks = [
   { name: "Codeberg", href: "https://codeberg.org/SakuraSedaia", icon: "codeberg" },
 ];
 
-export default function RibbonHeader() {
+export default function RibbonHeaderMobile() {
   return (
-    <header class={"ribbon-header"}>
+    <header class={"ribbon-header-mobile"}>
       <div class={"ribbon-start"}>
+        <span class={"ribbon-title"}>Sakura's Project Hub</span>
+      </div>
+      <div class={"ribbon-end"}>
         <button
           type={"button"}
           class={"hamburger-btn"}
@@ -21,9 +24,7 @@ export default function RibbonHeader() {
         >
           <IconBundle name={"hamburger"} />
         </button>
-        <span class={"ribbon-title"}>Sakura's Project Hub</span>
-      </div>
-      <nav class={"ribbon-socials"} aria-label={"Social links"}>
+        <nav class={"ribbon-socials"} aria-label={"Social links"}>
         <ul>
           {socialLinks.map((link) => (
             <li>
@@ -35,12 +36,12 @@ export default function RibbonHeader() {
                 aria-label={link.name}
               >
                 <IconBundle name={link.icon} class={"social-icon"} />
-                <span class={"ribbon-social-name"}>{link.name}</span>
               </a>
             </li>
           ))}
         </ul>
       </nav>
+      </div>
     </header>
   );
 }

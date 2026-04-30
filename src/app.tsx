@@ -7,6 +7,7 @@ import { Vercel } from "./components/vercel";
 import "./app.scss";
 import NavMain from "~/components/nav/nav-main";
 import RibbonHeader from "~/components/ribbon-header";
+import RibbonHeaderMobile from "~/components/ribbon-header-mobile";
 import StatusBar from "~/components/status-bar";
 import { sidebarOpen } from "~/utils/sidebar";
 
@@ -20,6 +21,7 @@ export default function App() {
             <Title>Project Hub</Title>
             <div class={`viewport ${sidebarOpen() ? "sidebar-open" : "sidebar-closed"}`}>
               <RibbonHeader />
+              <RibbonHeaderMobile />
               <NavMain />
               <main class={"content"}>
                 <ErrorBoundary fallback={(err) => <p>Application error: {err.message}</p>}>
