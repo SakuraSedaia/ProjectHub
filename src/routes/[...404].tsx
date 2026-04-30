@@ -4,7 +4,7 @@ import { HttpStatusCode } from "@solidjs/start";
 export default function NotFound() {
   return (
     <article class={"not-found"}>
-      <Title>Not Found</Title>
+      <Title>Not Found - Sakura's Project Hub</Title>
       <HttpStatusCode code={404} />
       <header>
         <h1>Page Not Found</h1>

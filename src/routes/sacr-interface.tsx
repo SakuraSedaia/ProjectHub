@@ -1,4 +1,3 @@
-import { Title } from "@solidjs/meta";
 import { ErrorBoundary, Suspense } from "solid-js";
 import PluginHero from "~/components/ui/plugin-hero";
 import About from "~/sections/plugins/sacr-interface/about";
@@ -12,7 +11,6 @@ export default function SacrInterface() {
     <ErrorBoundary fallback={(err) => <p>Failed to load page: {err.message}</p>}>
       <Suspense fallback={<p>Loading...</p>}>
         <article class={"plugin-page sacr-container theme-blender"}>
-          <Title>SACR Interface - Project Hub</Title>
           <PluginHero
             title={"SACR Interface"}
             description={"A custom Blender interface designed to simplify and enhance the workflow for using the Sakura Minecraft Character Rig."}

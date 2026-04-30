@@ -1,11 +1,13 @@
 import { A } from "@solidjs/router";
 import { ErrorBoundary, Suspense } from "solid-js";
+import SEO from "~/components/seo";
 
 export default function ComponentMap() {
   return (
     <ErrorBoundary fallback={(err) => <p>Failed to load component map: {err.message}</p>}>
       <Suspense fallback={<p>Loading...</p>}>
         <article class={"component-map"}>
+          <SEO title="Component Map" description="Development tool for visualizing components in Sakura's Project Hub." />
           <header class={"header"}>
             <h1>Component Map</h1>
             <p>This page is purely a development tool for visualizing component hierarchy and options to preview components within the Sakura's Project Hub application.</p>

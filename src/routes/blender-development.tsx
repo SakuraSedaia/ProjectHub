@@ -1,4 +1,3 @@
-import { Title } from "@solidjs/meta";
 import { ErrorBoundary, Suspense } from "solid-js";
 import PluginHero from "~/components/ui/plugin-hero";
 import About from "~/sections/plugins/blender-development/about";
@@ -13,7 +12,6 @@ export default function BlenderDevelopment() {
     <ErrorBoundary fallback={(err) => <p>Failed to load page: {err.message}</p>}>
       <Suspense fallback={<p>Loading...</p>}>
         <article class={"plugin-page blenddev-container theme-pycharm"}>
-          <Title>Blender Development - Project Hub</Title>
           <PluginHero
             title={"Blender Development"}
             description={"A comprehensive PyCharm plugin for developing and debugging Blender extensions."}

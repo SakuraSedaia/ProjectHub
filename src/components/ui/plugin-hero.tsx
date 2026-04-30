@@ -1,5 +1,5 @@
 import { For, JSX } from "solid-js";
-import { Title, Meta } from "@solidjs/meta";
+import SEO from "~/components/seo";
 
 type SupportedPlatform = "blender" | "pycharm";
 
@@ -35,8 +35,7 @@ export default function PluginHero(props: PluginHeroProps) {
 
   return (
     <header class={"hero"} style={`background-image: url('${props.backgroundImage}');`}>
-      <Title>{props.title}</Title>
-      <Meta name="description" content={props.description} />
+      <SEO title={props.title} description={props.description} image={props.backgroundImage} />
       <div class={"hero-content"}>
         <h1>{props.title}</h1>
         <p>{props.tagline}</p>
