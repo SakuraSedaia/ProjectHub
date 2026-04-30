@@ -1,4 +1,13 @@
-export default function DownloadLink(props) {
+import { JSX } from "solid-js";
+
+interface LinkProps {
+  path: string;
+  class?: string;
+  children?: JSX.Element;
+  disabled?: boolean;
+}
+
+export default function DownloadLink(props: LinkProps) {
   const downloadPath = `/lib/${props.path}`;
   
   // Extract filename from path to use as the download attribute

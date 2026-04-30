@@ -1,6 +1,6 @@
 import {ErrorBoundary, Suspense} from "solid-js";
 import {NoHydration} from "solid-js/web";
-import KnownIssueItem from "~/components/ui/known-issue-item";
+import KnownIssueItem from "../../../components/ui/known-issue-item";
 export default function BlenderDevKnownIssues() {
 	return (
 		<NoHydration>

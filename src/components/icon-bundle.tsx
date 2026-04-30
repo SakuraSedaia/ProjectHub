@@ -1,5 +1,10 @@
-export default function IconBundle(props) {
-  const icons = {
+interface IconBundleProps {
+  name: string;
+  class: string;
+}
+
+export default function IconBundle(props: IconBundleProps) {
+  const icons: Record<string, string> = {
     "discord": "bi-logos-discord",
     "github": "bi-logos-github",
     "youtube": "bi-logos-youtube",

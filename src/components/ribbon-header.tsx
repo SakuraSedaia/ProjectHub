@@ -1,4 +1,4 @@
-import IconBundle from "~/components/icon-bundle";
+import IconBundle from "./icon-bundle";
 import { sidebarOpen, toggleSidebar } from "~/utils/sidebar";
 
 const socialLinks = [

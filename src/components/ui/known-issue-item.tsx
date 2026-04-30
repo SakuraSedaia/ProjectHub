@@ -1,6 +1,14 @@
 import Tooltip from "./tooltip";
+import { JSX } from "solid-js";
 
-export default function KnownIssueItem(props) {
+interface KnownIssueItemProps {
+	issueLink: string;
+	title: string;
+	confirmDate: string;
+	children?: JSX.Element;
+}
+
+export default function KnownIssueItem(props: KnownIssueItemProps) {
 	const issueNumber = props.issueLink.substring(props.issueLink.lastIndexOf("/") + 1);
 	let isLinkDisabled = false;
 	if (props.issueLink == "disabled") {
@@ -20,7 +28,7 @@ export default function KnownIssueItem(props) {
 					</Tooltip>
 				)}
 			</h3>
-			<h4>Confirmed on {props.confirmed}</h4>
+			<h4>Confirmed on {props.confirmDate}</h4>
 			<div>
 				{props.children}
 			</div>

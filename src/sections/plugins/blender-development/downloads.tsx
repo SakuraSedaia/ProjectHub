@@ -1,6 +1,6 @@
 import { Show, For, createSignal } from "solid-js";
 import addonIndex from "~/json-data/addon-index.json";
-import DownloadPlugins from "~/components/ui/download-plugins";
+import DownloadPlugins from "../../../components/ui/download-plugins";
 
 export default function BlenderDevDownloads() {
 	const index = addonIndex

@@ -2,15 +2,60 @@ import { createSignal, For, createMemo, Show, onMount, onCleanup, createEffect }
 import { A } from "@solidjs/router";
 import DownloadLink from "./download-link";
 
-export default function DownloadPlugins(props) {
-	const branch = JSON.parse(props.json);
+interface PluginCompatibility {
+	minVersion: string;
+	maxVersion: string;
+}
+
+interface PluginBuild {
+	version?: string;
+	label?: string;
+	fileName?: string;
+	date?: string;
+	changelog?: string;
+	compatibility?: PluginCompatibility;
+	sourceCode?: string;
+	sourceUrl?: string;
+	size?: string;
+	notes?: string;
+	disabled?: boolean;
+	license?: string;
+}
+
+interface PluginVersion {
+	version: string;
+	label?: string;
+	date?: string;
+	fileName?: string;
+	changelog?: string;
+	compatibility?: PluginCompatibility;
+	sourceCode?: string;
+	builds?: PluginBuild[];
+}
+
+interface PluginBranch {
+	description: string;
+	path: string;
+	enabled?: boolean;
+	versions: PluginVersion[];
+	namePrefix?: string;
+}
+
+interface DownloadPluginProps {
+	json: string;
+	software: string;
+	repo?: string;
+}
+
+export default function DownloadPlugins(props: DownloadPluginProps) {
+	const branch: PluginBranch = JSON.parse(props.json);
 	
 	// Group builds by version
 	const versionsMap = createMemo(() => {
-		const map = new Map();
+		const map = new Map<string, PluginBuild[]>();
 		const versions = branch.versions || [];
 		
-		versions.forEach(v => {
+		versions.forEach((v) => {
 			map.set(v.version, (v.builds || []).map(b => ({
 				...b,
 				version: v.version,
@@ -63,19 +108,19 @@ export default function DownloadPlugins(props) {
 		return cleanPath ? `${cleanPath}/${cleanFileName}` : cleanFileName;
 	});
 
-	let dropdownRef;
-	let tabContainerRef;
+	let dropdownRef: HTMLDivElement | undefined;
+	let tabContainerRef: HTMLDivElement | undefined;
 	const [indicatorStyle, setIndicatorStyle] = createSignal({});
 
-	const handleClickOutside = (e) => {
-		if (dropdownRef && !dropdownRef.contains(e.target)) {
+	const handleClickOutside = (e: MouseEvent) => {
+		if (dropdownRef && !dropdownRef.contains(e.target as Node)) {
 			setIsOpen(false);
 		}
 	};
 
 	const updateIndicator = () => {
 		if (tabContainerRef) {
-			const activeTab = tabContainerRef.querySelector(".tab.active");
+			const activeTab = tabContainerRef.querySelector(".tab.active") as HTMLDivElement | null;
 			if (activeTab) {
 				setIndicatorStyle({
 					left: `${activeTab.offsetLeft}px`,

@@ -2,7 +2,7 @@ import { Show, onMount, onCleanup } from "solid-js";
 import { isServer } from "solid-js/web";
 import { A } from "@solidjs/router";
 import { isVercelActivated } from "~/utils/vercel";
-import IconBundle from "~/components/icon-bundle";
+import IconBundle from "../icon-bundle";
 import { sidebarOpen, closeSidebar } from "~/utils/sidebar";
 
 export default function NavMain() {
