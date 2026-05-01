@@ -1,8 +1,8 @@
 # Sakura's Project Hub
 
 A central hub for all of [SakuraSedaia](https://codeberg.org/SakuraSedaia)'s
-open-source software projects — primarily Blender add-ons and JetBrains
-plugins built around the Sakura Minecraft Character Rig (SACR) ecosystem.
+open-source software projects — primarily Blender extensions and JetBrains
+plugins built around the Blender and Intellij ecosystems.
 
 The hub provides a single landing site that links every project to its
 documentation, downloads, changelogs, and the official platform listings
@@ -16,7 +16,7 @@ This project is an ongoing website and will not have dedicated
 versioned releases. The hub is continuously deployed from the main
 branch, and updates ship as soon as they land — there are no tagged
 `v1.0`, `v2.0`, etc. milestones for the site itself. Individual
-projects hosted on the hub (Blender add-ons, JetBrains plugins) keep
+projects hosted on the hub (Blender extensions, JetBrains plugins) keep
 their own independent versioning; only the site/wrapper is unversioned.
 
 Expect frequent changes to the homepage, navigation, and individual
@@ -25,11 +25,11 @@ portfolio site.
 
 Currently included:
 
-- **SACR Interface** — Blender add-on for the Sakura Minecraft Character
+- **SACR Interface** — Blender extension for the Sakura Minecraft Character
   Rig (downloads, instructions, changelogs).
 - **Blender Development** — PyCharm plugin for developing and debugging
   Blender extensions (downloads, instructions, known issues).
-- **Changelogs** — per-version release notes for every published build.
+- **Changelogs** — Per-version release notes for every published build, accessed via the "View changelog" button on the project page.
 - **Homepage** — landing page summarizing the projects, latest updates,
   and community links.
 
