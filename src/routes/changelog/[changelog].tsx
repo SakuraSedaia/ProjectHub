@@ -17,7 +17,7 @@ interface ChangelogSection {
   content: string;
 }
 
-const changelogs = import.meta.glob("../../markdown/changelogs/*.md", {
+const changelogs = import.meta.glob("../../markdown/changelogs/**/*.md", {
   query: "?raw",
   import: "default",
 });
