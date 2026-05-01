@@ -1,8 +1,18 @@
-
+// Base
 @use "styles/main";
 @use "styles/common";
 @use "styles/variables";
+
+// Themes
+@use "styles/themes/brand-themes";
+
+// Components
 @use "styles/components/icon-bundle";
 @use "styles/components/page-hero";
-@use "styles/themes/brand-themes";
+@use "styles/components/nav-main";
+
+// Pages
 @use "styles/pages/index";
+@use "styles/pages/changelog";
+@use "styles/pages/sacr-interface";
+@use "styles/pages/blender-development";
