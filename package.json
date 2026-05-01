@@ -1,6 +1,7 @@
 {
   "name": "example-basic",
   "type": "module",
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "vite dev --host",
     "build": "vite build",
@@ -24,5 +25,14 @@
   },
   "devDependencies": {
     "sass": "^1.99.0"
-  }
+  },
+  "keywords": ["solidjs", "vite", "example", "basic"],
+  "repository": {
+    "type": "git",
+    "url": "https://codeberg.org/SakuraSedaia/project-hub.git"
+  },
+  "bugs": {
+    "url": "https://codeberg.org/SakuraSedaia/project-hub/issues"
+  },
+  "homepage": "https://codeberg.org/SakuraSedaia/project-hub#readme"
 }

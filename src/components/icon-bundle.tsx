@@ -1,6 +1,6 @@
 interface IconBundleProps {
   name: string;
-  class: string;
+  class?: string;
 }
 
 export default function IconBundle(props: IconBundleProps) {

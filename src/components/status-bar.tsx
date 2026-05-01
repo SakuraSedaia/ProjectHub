@@ -13,12 +13,12 @@ export default function StatusBar() {
       <div class={"license-note"}>
         Website codebase licensed under{" "}
         <a
-          href={"https://opensource.org/license/bsd-3-clause"}
+          href={"https://www.gnu.org/licenses/gpl-3.0.en.html#license-text"}
           class={"link"}
           target={"_blank"}
           rel={"noopener noreferrer"}
         >
-          BSD 3-Clause
+          GNU GPL v3.0
         </a>
         ; hosted projects are licensed separately (see each project's repository).
       </div>
