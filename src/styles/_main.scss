@@ -1,10 +1,6 @@
 @use "common" as *;
 @use "variables" as *;
 
-:root {
-  --nav-width: 14rem;
-}
-
 body {
   width: 100%;
   height: 100%;
@@ -23,7 +19,6 @@ div.viewport {
 
     &.sidebar-closed {
       padding-inline: 0;
-      --nav-width: 0rem;
 
       nav.nav-main {
         border-right-color: transparent;
@@ -243,104 +238,6 @@ div.viewport {
     }
   }
 
-
-
-
-  nav.nav-main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: var(--nav-width);
-    z-index: 5;
-    border-right: 1px solid var(--border-color);
-    background-color: hsl(var(--bg-secondary-val));
-    background-image: linear-gradient(
-      to right,
-      hsl(var(--bg-secondary-val)),
-      hsl(var(--bg-primary-val) / 0.2)
-    );
-    padding: 3.5rem 0 1rem 0;
-    height: 100%;
-    grid-column: 1 / 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    transition: padding 0.3s ease, border-right-color 0.3s ease, width 0.3s ease, transform 0.3s ease;
-
-    &.sidebar-closed {
-        transform: translateX(-100%);
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      width: var(--nav-width);
-      overflow-x: hidden;
-      overflow-y: auto;
-      transition: width 0.3s ease, opacity 0.3s ease;
-      flex-grow: 1;
-      li {
-        padding: 0;
-        margin: 0;
-        a {
-          color: var(--tx-primary);
-          text-decoration: none;
-          padding-block: .5rem;
-          display: block;
-          transition: 0.2s ease;
-          text-indent: 1rem;
-          box-shadow: inset 0 0 0 var(--primary-color);
-          width: 100%;
-
-          &:hover {
-            color: var(--primary-color);
-            box-shadow: inset 4px 0 0 var(--primary-color);
-          }
-
-          &.active {
-            color: var(--primary-color);
-            box-shadow: inset 4px 0 0 var(--primary-color);
-          }
-        }
-
-        span {
-          color: var(--tx-primary);
-          text-decoration: none;
-          padding-block: .5rem;
-          display: block;
-          transition: 0.2s ease;
-          text-indent: 1rem;
-          width: 100%;
-        }
-        ul {
-          width: calc(var(--nav-width));
-          background-color: var(--bg-primary);
-          a {
-            padding-left: 1rem;
-
-          }
-        }
-      }
-
-    }
-
-    ul.nav-external {
-      flex-grow: 0;
-      width: var(--nav-width);
-      border-top: 0.0625rem solid hsl(var(--border-color-val));
-      padding-top: 0.5rem;
-      margin-top: auto;
-
-      li a {
-        font-size: 0.85rem;
-        text-indent: 1rem;
-      }
-    }
-  }
-
   .content {
     overflow-y: scroll;
     height: calc(100% - 3.5rem);
@@ -400,22 +297,6 @@ div.viewport {
       display: block;
     }
 
-
-    nav.nav-main {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: var(--nav-width);
-      margin-top: 5rem;
-      z-index: 10;
-      padding-top: 1rem;
-
-      ul {
-        flex-grow: 1;
-      }
-    }
-
     .content {
       grid-column: 1 / -1;
       flex-grow: 1;
@@ -427,5 +308,4 @@ div.viewport {
       align-items: center;
     }
   }
-
 }

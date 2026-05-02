@@ -5,7 +5,7 @@ import { ErrorBoundary, Suspense } from "solid-js";
 import { ThemeProvider } from "./components/theme/theme-context";
 import { Vercel } from "./components/vercel";
 import "./app.scss";
-import NavMain from "~/components/nav/nav-main";
+import NavSidebar from "./components/nav/nav-sidebar";
 import RibbonHeader from "~/components/ribbon-header";
 import RibbonHeaderMobile from "~/components/ribbon-header-mobile";
 import StatusBar from "~/components/status-bar";
@@ -22,7 +22,7 @@ export default function App() {
             <div class={`viewport ${sidebarOpen() ? "sidebar-open" : "sidebar-closed"}`}>
               <RibbonHeader />
               <RibbonHeaderMobile />
-              <NavMain />
+              <NavSidebar />
               <main class={"content"}>
                 <ErrorBoundary fallback={(err) => <p>Application error: {err.message}</p>}>
                   <Suspense>{props.children}</Suspense>
