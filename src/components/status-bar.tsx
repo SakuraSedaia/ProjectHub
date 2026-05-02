@@ -1,6 +1,6 @@
 import { createSignal, onMount } from "solid-js";
 
-export default function StatusBar() {
+export default function StatusBar(props: { class: string }) {
   const [year, setYear] = createSignal(new Date().getFullYear());
 
   onMount(() => {
@@ -8,10 +8,10 @@ export default function StatusBar() {
   });
 
   return (
-    <footer class={"status-bar"}>
+    <footer class={`status-bar ${props.class}`}>
       <div class={"copyright"}>&copy; {year()} Sedaia Designs. All Rights Reserved.</div>
       <div class={"license-note"}>
-        Website codebase licensed under{" "}
+        Website licensed under{" "}
         <a
           href={"https://www.gnu.org/licenses/gpl-3.0.en.html#license-text"}
           class={"link"}
@@ -20,7 +20,7 @@ export default function StatusBar() {
         >
           GNU GPL v3.0
         </a>
-        ; hosted projects are licensed separately (see each project's repository).
+        ; hosted projects licensed separately.
       </div>
       <div class={"powered-by"}>
         Powered by{" "}

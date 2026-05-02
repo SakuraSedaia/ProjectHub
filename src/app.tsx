@@ -27,8 +27,10 @@ export default function App() {
                 <ErrorBoundary fallback={(err) => <p>Application error: {err.message}</p>}>
                   <Suspense>{props.children}</Suspense>
                 </ErrorBoundary>
+                <StatusBar class={"mobile"} />
               </main>
-              <StatusBar />
+              <StatusBar class={"desktop"} />
+              
             </div>
           </MetaProvider>
         </ThemeProvider>
