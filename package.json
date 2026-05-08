@@ -1,5 +1,5 @@
 {
-  "name": "example-basic",
+  "name": "project-hub",
   "type": "module",
   "license": "GPL-3.0-or-later",
   "scripts": {
@@ -26,7 +26,7 @@
   "devDependencies": {
     "sass": "^1.99.0"
   },
-  "keywords": ["solidjs", "vite", "example", "basic"],
+  "keywords": ["solidjs", "vite", "project", "hub"],
   "repository": {
     "type": "git",
     "url": "https://codeberg.org/SakuraSedaia/project-hub.git"
