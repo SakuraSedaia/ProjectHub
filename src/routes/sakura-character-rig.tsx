@@ -14,11 +14,11 @@ export default function SakuraCharacterRig() {
           <PluginHero
             title={"Sakura Minecraft Character Rig"}
             description={"Download and learn how to use the Sakura Minecraft Character Rig, a highly flexible and powerful tool for Minecraft animations."}
-            tagline={"The flagship rig the SACR Interface is built around — a fully featured Minecraft character rig for animators and artists."}
+            tagline={"The flagship rig Sakura Rig Utilities is built around — a fully featured Minecraft character rig for animators and artists."}
             backgroundImage={"/images/headers/sacr.jxl"}
             supportedPlatform={"blender"}
           />
-          <DeprecationNotice message={"Following R7.4.1, SACR will no longer be released as an individual asset. From here on out, SACR will be bundled exclusively with the Sedaia Rig Interface starting with SR_GUI V4."}/>
+          <DeprecationNotice message={"Following R7.4.1, SACR will no longer be released as an individual asset. From here on out, SACR will be bundled exclusively with Sakura Rig Utilities starting with V4."}/>
           <About />
           <Downloads />
           <Addon />

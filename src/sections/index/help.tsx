@@ -14,7 +14,7 @@ export default function Help() {
           <button type={"submit"} aria-label={"Search"}>→</button>
         </form>
         <div class={"help-suggestions"}>
-          <A href={"/sacr-interface"}>SACR Interface</A>
+          <A href={"/sakura-rig-utilities"}>Sakura Rig Utilities</A>
           <A href={"/blender-development"}>Blender Development</A>
           <A href={"/changelog"}>Latest changelog</A>
         </div>

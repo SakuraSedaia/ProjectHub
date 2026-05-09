@@ -10,18 +10,18 @@ const updateCards = [
     href: "/blender-development",
   },
   {
-    title: "SACR Interface V4.0.0 Alpha",
+    title: "Sakura Rig Utilities V4.0.0 Alpha",
     description:
       "The next major version of the rig interface, targeting Blender 5.0 with a refreshed UI, new features, and bug fixes.",
     cta: "View development branch",
-    href: "/sacr-interface",
+    href: "/sakura-rig-utilities",
   },
   {
-    title: "SACR Interface V3.1.0",
+    title: "Sakura Rig Utilities V3.1.0",
     description:
       "Stable release that streamlines UI navigation, adds missing eye material options, and optimizes the backend for better maintainability.",
     cta: "Read the changelog",
-    href: "/sacr-interface",
+    href: "/sakura-rig-utilities",
   },
 ];
 

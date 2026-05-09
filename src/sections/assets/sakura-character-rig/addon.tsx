@@ -8,7 +8,7 @@ export default function Addon() {
       </div>
       <div class={"standard-container"}>
         <p>
-          View the associated Extension here: <A href={"/sacr-interface"} class={"link"}>SACR Blender Addon</A>
+          View the associated Extension here: <A href={"/sakura-rig-utilities"} class={"link"}>Sakura Rig Utilities</A>
         </p>
       </div>
     </section>

@@ -9,7 +9,7 @@ export default function Hero() {
       tagline="Built to make rigging, animating, and developing for Blender faster and friendlier."
       backgroundImage="/images/headers/sacr.jxl"
     >
-      <A href={"/sacr-interface"} class={"btn-primary"}>Explore SACR Interface</A>
+      <A href={"/sakura-rig-utilities"} class={"btn-primary"}>Explore Sakura Rig Utilities</A>
     </PluginHero>
   );
 }

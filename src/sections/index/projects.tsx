@@ -3,11 +3,11 @@ import { For } from "solid-js";
 
 const projectCards = [
   {
-    title: "SACR Interface",
+    title: "Sakura Rig Utilities",
     description:
       "A Blender add-on providing a streamlined GUI for importing, configuring, and managing the Sakura Minecraft Character Rig.",
     cta: "View project",
-    href: "/sacr-interface",
+    href: "/sakura-rig-utilities",
     imageClass: "product-sacr",
   },
   {
@@ -21,7 +21,7 @@ const projectCards = [
   {
     title: "Sakura Minecraft Character Rig",
     description:
-      "The flagship rig the SACR Interface is built around — a fully featured Minecraft character rig for animators and artists.",
+      "The flagship rig Sakura Rig Utilities is built around — a fully featured Minecraft character rig for animators and artists.",
     cta: "Learn more",
     href: "/sakura-character-rig",
     imageClass: "product-rig",
