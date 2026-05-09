@@ -34,6 +34,11 @@ h2 {
   padding: 0 20px;
 }
 
+.standard-container {
+  max-width: 56.25rem;
+  margin: 0 auto 3rem;
+}
+
 @mixin shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -48,6 +53,28 @@ h2 {
 
 @mixin border {
   border: 1px solid var(--border-color);
+}
+
+// Buttons
+.btn-primary {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background: hsl(var(--primary-color-val));
+  color: hsl(var(--color-zinc-950-val));
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: background 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  text-decoration: none;
+
+  &:hover {
+    background: hsl(var(--color-pink-300-val));
+    box-shadow: 0 0 0 1px hsl(var(--primary-color-val) / 0.4);
+  }
+
+  &.small {
+    padding: 0.5em 1em;
+    font-size: 0.9rem;
+  }
 }
 
 // Common utility classes

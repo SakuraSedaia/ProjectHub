@@ -9,34 +9,36 @@ const communityCards = [
     href: "https://discord.gg/Qk4pfbG7Pf",
   },
   {
-    title: "Report issues & request features",
+    title: "Join the Fluxer community",
     description:
-      "Found a bug or have an idea? File issues directly on the project repositories on Codeberg.",
-    cta: "Open an issue",
-    href: "https://codeberg.org/SakuraSedaia",
+      "Want an alternative to Discord? I have a Fluxer community as well! Feel free to join and chat with other users of Fluxer.",
+    cta: "Join the Fluxer community",
+    href: "https://fluxer.gg/M9gYmCdr",
   },
 ];
 
 export default function Community() {
   return (
-    <section class={"home-sustainability"} aria-label={"Community"}>
-      <div class={"card-grid two"}>
-        <For each={communityCards}>
-          {(card) => (
-            <article class={"story-card"}>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-              <a
-                href={card.href}
-                class={"btn-primary small"}
-                target={"_blank"}
-                rel={"noopener noreferrer"}
-              >
-                {card.cta}
-              </a>
-            </article>
-          )}
-        </For>
+    <section class={"home-community"} aria-label={"Community"}>
+      <div class={"standard-container"}>
+        <div class={"card-grid two"}>
+          <For each={communityCards}>
+            {(card) => (
+              <article class={"community-card"}>
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
+                <a
+                  href={card.href}
+                  class={"btn-primary small"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                >
+                  {card.cta}
+                </a>
+              </article>
+            )}
+          </For>
+        </div>
       </div>
     </section>
   );

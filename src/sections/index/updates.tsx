@@ -27,18 +27,20 @@ const updateCards = [
 
 export default function Updates() {
   return (
-    <section class={"home-ai"} aria-label={"Latest updates"}>
-      <h2>Latest updates</h2>
-      <div class={"card-grid three"}>
-        <For each={updateCards}>
-          {(card) => (
-            <article class={"ai-card"}>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-              <A href={card.href} class={"btn-primary small"}>{card.cta}</A>
-            </article>
-          )}
-        </For>
+    <section class={"home-updates"} aria-label={"Latest updates"}>
+      <div class={"standard-container"}>
+        <h2>Latest updates</h2>
+        <div class={"card-grid three"}>
+          <For each={updateCards}>
+            {(card) => (
+              <article class={"updates-card"}>
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
+                <A href={card.href} class={"btn-primary small"}>{card.cta}</A>
+              </article>
+            )}
+          </For>
+        </div>
       </div>
     </section>
   );

@@ -39,19 +39,21 @@ const projectCards = [
 export default function Projects() {
   return (
     <section class={"home-products"} aria-label={"Featured projects"}>
-      <div class={"card-grid"}>
-        <For each={projectCards}>
-          {(card) => (
-            <article class={`product-card ${card.imageClass}`}>
-              <div class={"card-image"} aria-hidden={"true"} />
-              <div class={"card-body"}>
-                <h3>{card.title}</h3>
-                <p>{card.description}</p>
-                <A href={card.href} class={"btn-primary small"}>{card.cta}</A>
-              </div>
-            </article>
-          )}
-        </For>
+      <div class={"standard-container"}>
+        <div class={"card-grid"}>
+          <For each={projectCards}>
+            {(card) => (
+              <article class={`product-card ${card.imageClass}`}>
+                <div class={"card-image"} aria-hidden={"true"} />
+                <div class={"card-body"}>
+                  <h3>{card.title}</h3>
+                  <p>{card.description}</p>
+                  <A href={card.href} class={"btn-primary small"}>{card.cta}</A>
+                </div>
+              </article>
+            )}
+          </For>
+        </div>
       </div>
     </section>
   );
