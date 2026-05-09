@@ -1,3 +1,6 @@
+@use "../variables" as *;
+$nav-item-height: 2.5rem;
+
 nav.nav-main {
   --nav-width: 14rem;
   width: var(--nav-width);
@@ -47,12 +50,14 @@ nav.nav-main {
       li {
         padding: 0;
         margin: 0;
+        border-bottom: 1px solid var(--border-color);
 
 
         a {
           color: var(--tx-primary);
           text-decoration: none;
-          padding-block: .5rem;
+          align-content: center;
+          height: $nav-item-height;
           display: block;
           transition: 0.2s ease;
           text-indent: 1rem;
@@ -73,18 +78,35 @@ nav.nav-main {
         span {
           color: var(--tx-primary);
           text-decoration: none;
-          padding-block: .5rem;
           display: block;
           transition: 0.2s ease;
+          align-content: center;
           text-indent: 1rem;
           width: 100%;
+          cursor: pointer;
+          height: $nav-item-height;
+
+          svg {
+            transition: transform 0.2s ease;
+            transform: translateY(-.1rem) rotate(-90deg);
+
+            &.open {
+              transform: rotate(0deg);
+            }
+          }
         }
 
-        ul {
-          background-color: var(--bg-primary);
+        .sub-nav-container {
+          overflow: hidden;
+          transition: height 0.3s ease;
 
-          a {
-            padding-left: 1rem;
+          ul {
+            background-color: var(--bg-primary);
+
+
+            a {
+              padding-left: 1rem;
+            }
           }
         }
       }
@@ -92,15 +114,56 @@ nav.nav-main {
 
     ul.nav-external {
       flex-grow: 0;
-      border-top: 0.0625rem solid hsl(var(--border-color-val));
       padding-top: 0.5rem;
       margin-top: auto;
 
-      li a {
-        font-size: 0.85rem;
-        text-indent: 1rem;
+
+      li {
+        &:first-of-type {
+          border-top: 1px solid var(--border-color);
+        }
+
+        a {
+          font-size: 0.85rem;
+          text-indent: 1rem;
+        }
       }
     }
+
+
+    .license-note {
+      font-size: 0.85rem;
+      color: var(--tx-secondary);
+      display: block;
+      width: 14rem;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      span, .copyright {
+        $padding-inline: 1.2em;
+        $padding-block: .5em;
+        padding: $padding-block $padding-inline 0 $padding-inline;
+        display: block;
+        .link {
+          color: var(--tx-secondary);
+          text-decoration: none;
+          box-shadow: inset 0 -0.0625rem 0 transparent;
+          transition: color 0.1s ease, box-shadow 0.1s ease;
+
+          span {
+            display: inline-block;
+          }
+
+          &:hover,
+          &:focus-visible {
+            color: var(--primary-color);
+            box-shadow: inset 0 -0.0625rem 0 var(--primary-color);
+          }
+        }
+      }
+
+    }
+
+
   }
 }
 
