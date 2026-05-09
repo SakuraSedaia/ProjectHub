@@ -1,3 +1,4 @@
+import { For } from "solid-js";
 import IconBundle from "./icon-bundle";
 import { sidebarOpen, toggleSidebar } from "~/utils/sidebar";
 
@@ -28,20 +29,22 @@ export default function RibbonHeader() {
       <div class={"ribbon-socials"}>
         <nav aria-label={"Social links"}>
           <ul>
-            {socialLinks.map((link) => (
-              <li>
-                <a
-                  href={link.href}
-                  class={"link"}
-                  target={"_blank"}
-                  rel={"noopener noreferrer"}
-                  aria-label={link.name}
-                >
-                  <IconBundle name={link.icon} class={"social-icon"} />
-                  <span class={"social-name"}>{link.name}</span>
-                </a>
-              </li>
-            ))}
+            <For each={socialLinks}>
+              {(link) => (
+                <li>
+                  <a
+                    href={link.href}
+                    class={"link"}
+                    target={"_blank"}
+                    rel={"noopener noreferrer"}
+                    aria-label={link.name}
+                  >
+                    <IconBundle name={link.icon} class={"social-icon"} />
+                    <span class={"social-name"}>{link.name}</span>
+                  </a>
+                </li>
+              )}
+            </For>
           </ul>
         </nav>
       </div>
