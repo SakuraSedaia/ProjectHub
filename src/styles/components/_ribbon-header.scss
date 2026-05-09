@@ -1,0 +1,144 @@
+@use "../common" as *;
+@use "../variables" as *;
+
+div.viewport {
+
+  header.ribbon-header {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0s;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: fit-content(100%) auto auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidenav title socials";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    gap: 1rem;
+    height: 3.25em;
+    background-color: hsl(var(--bg-secondary-val));
+    background-image: linear-gradient(
+            to bottom,
+            hsl(var(--bg-secondary-val)),
+            hsl(var(--bg-primary-val) / 0.3)
+    );
+    border-bottom: 0.0625rem solid hsl(var(--border-color-val));
+    z-index: 10;
+    padding-inline: 1rem;
+    @include shadow;
+
+
+
+    // Sections
+    .ribbon-title {
+      // Title Of the Website
+      grid-area: title;
+      width: fit-content;
+      height: 3em;
+      text-align: left;
+      align-content: center;
+    }
+
+    .ribbon-sidenav-button {
+      // Button to open the side navigation
+      grid-area: sidenav;
+      max-width: fit-content;
+
+      .hamburger-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        color: var(--tx-primary);
+        cursor: pointer;
+        border-radius: 0.25rem;
+        transition: color 0.1s ease, background-color 0.1s ease;
+
+        .icon {
+          width: 1.75em;
+          height: 1.75em;
+          margin-top: .1rem;
+        }
+
+        &:hover,
+        &:focus-visible {
+          color: var(--primary-color);
+          background-color: hsla(0, 0%, 100%, 0.05);
+        }
+      }
+    }
+
+    .ribbon-socials {
+      // Dedicated Nav container for Social Icons
+      grid-area: socials;
+
+      nav ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        list-style: none;
+        justify-content: flex-end;
+        li {
+          text-decoration: none;
+          align-items: center;
+
+          a {
+            color: white;
+            text-decoration: none;
+
+            span {
+              overflow: hidden;
+              opacity: 100%;
+              transition: width 0.3s ease, opacity 0.3s ease;
+              padding-left: .25rem;
+            }
+
+            .icon {
+              width: 1.5rem;
+              height: 1.5rem;
+              transform: translateY(-.1rem);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  div.viewport {
+    .ribbon-header {
+      grid-template-areas: "title sidenav socials";
+
+      // Sections
+      .ribbon-title {
+        grid-area: title;
+      }
+
+      .ribbon-sidenav-button {
+        grid-area: sidenav;
+      }
+
+      .ribbon-socials {
+        grid-area: socials;
+        nav ul {
+          li {
+            a {
+              span {
+                width: 0;
+                overflow: hidden;
+                opacity: 0;
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

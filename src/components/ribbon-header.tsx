@@ -11,7 +11,10 @@ const socialLinks = [
 export default function RibbonHeader() {
   return (
     <header class={"ribbon-header"}>
-      <div class={"ribbon-start"}>
+      <div class={"ribbon-title"}>
+        <span class={""}>Sakura's Project Hub</span>
+      </div>
+      <div class={"ribbon-sidenav-button"}>
         <button
           type={"button"}
           class={"hamburger-btn"}
@@ -21,26 +24,27 @@ export default function RibbonHeader() {
         >
           <IconBundle name={"hamburger"} />
         </button>
-        <span class={"ribbon-title"}>Sakura's Project Hub</span>
       </div>
-      <nav class={"ribbon-socials"} aria-label={"Social links"}>
-        <ul>
-          {socialLinks.map((link) => (
-            <li>
-              <a
-                href={link.href}
-                class={"link"}
-                target={"_blank"}
-                rel={"noopener noreferrer"}
-                aria-label={link.name}
-              >
-                <IconBundle name={link.icon} class={"social-icon"} />
-                <span class={"ribbon-social-name"}>{link.name}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <div class={"ribbon-socials"}>
+        <nav aria-label={"Social links"}>
+          <ul>
+            {socialLinks.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class={"link"}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                  aria-label={link.name}
+                >
+                  <IconBundle name={link.icon} class={"social-icon"} />
+                  <span class={"social-name"}>{link.name}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }
