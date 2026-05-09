@@ -20,6 +20,7 @@ app.config.timestamp_*.js
 
 # IDEs and editors
 /.idea
+/.junie
 .project
 .classpath
 *.launch
