@@ -26,7 +26,12 @@
   "devDependencies": {
     "sass": "^1.99.0"
   },
-  "keywords": ["solidjs", "vite", "project", "hub"],
+  "keywords": [
+    "solidjs",
+    "vite",
+    "project",
+    "hub"
+  ],
   "repository": {
     "type": "git",
     "url": "https://codeberg.org/SakuraSedaia/project-hub.git"
