@@ -1,4 +1,4 @@
-import { createSignal, JSX, Show, createMemo } from "solid-js";
+import {createSignal, JSX, Show, createMemo, children} from "solid-js";
 import { A } from "@solidjs/router";
 import { closeSidebar } from "~/utils/sidebar";
 import IconBundle from "~/components/icon-bundle";
@@ -12,7 +12,6 @@ interface NavSubRouterProps {
   children: JSX.Element;
   class?: string;
   title?: string;
-  count?: number;
 }
 
 interface NavItemProps {
@@ -35,7 +34,7 @@ export function NavSubRouter(props: NavSubRouterProps) {
 
   const subNavHeight = createMemo(() => {
     if (!subNavOpen()) return 0;
-    return (props.count ?? 0) * itemHeight;
+    return (children(()=> props.children).toArray().length) * itemHeight;
   });
 
   function toggleSubNav() {
