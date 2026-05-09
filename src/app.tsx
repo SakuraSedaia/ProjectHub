@@ -7,7 +7,6 @@ import { Vercel } from "./components/vercel";
 import "./app.scss";
 import NavSidebar from "./components/nav/nav-sidebar";
 import RibbonHeader from "~/components/ribbon-header";
-import StatusBar from "~/components/status-bar";
 import { sidebarOpen } from "~/utils/sidebar";
 
 export default function App() {
@@ -25,10 +24,7 @@ export default function App() {
                 <ErrorBoundary fallback={(err) => <p>Application error: {err.message}</p>}>
                   <Suspense>{props.children}</Suspense>
                 </ErrorBoundary>
-                <StatusBar class={"mobile"} />
               </main>
-              <StatusBar class={"desktop"} />
-              
             </div>
           </MetaProvider>
         </ThemeProvider>
