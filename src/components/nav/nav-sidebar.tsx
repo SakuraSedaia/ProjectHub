@@ -30,9 +30,12 @@ export default function NavSidebar() {
       <div class={"nav-contain"}>
         <NavRouter class={"nav-internal"}>
           <NavItem path={"/"}>Home</NavItem>
-          <NavSubRouter title={"Projects"}>
+          <NavSubRouter title={"Plugins"}>
             <NavItem path={"/sacr-interface"}>SACR Interface</NavItem>
             <NavItem path={"/blender-development"}>Blender Development</NavItem>
+          </NavSubRouter>
+          <NavSubRouter title={"Assets"}>
+            <NavItem path={"/sakura-character-rig"}>Sakura Character Rig</NavItem>
           </NavSubRouter>
         </NavRouter>
         
