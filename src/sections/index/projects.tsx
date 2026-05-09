@@ -26,21 +26,13 @@ const projectCards = [
     href: "/sakura-character-rig",
     imageClass: "product-rig",
   },
-  {
-    title: "Changelogs & Releases",
-    description:
-      "Browse detailed changelogs for every plugin and add-on release, including notes for stable and development branches.",
-    cta: "Read changelogs",
-    href: "/changelog",
-    imageClass: "product-changelog",
-  },
 ];
 
 export default function Projects() {
   return (
     <section class={"home-products"} aria-label={"Featured projects"}>
       <div class={"standard-container"}>
-        <div class={"card-grid"}>
+        <div class={"card-grid"} style={`grid-template-columns: repeat(${projectCards.length}, 1fr);`}>
           <For each={projectCards}>
             {(card) => (
               <article class={`product-card ${card.imageClass}`}>
