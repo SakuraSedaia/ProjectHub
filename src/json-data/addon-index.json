@@ -139,8 +139,8 @@
 			}
 		}
 	},
-	"SakuraRigInterface": {
-		"name": "Sakura Rig Interface",
+	"SakuraRigUtilities": {
+		"name": "Sakura Rig Utilities",
 		"repo": "https://codeberg.org/SakuraSedaia/Sakura-Rig-Interfaces",
 		"software": "Blender",
 		"license": "GNU/GPL V3",
@@ -160,7 +160,7 @@
 				"versions": [
 					{
 						"version": "V3.1.0",
-						"label": "SACR Interface V3.1.0",
+						"label": "Sakura Rig Utilities V3.1.0",
 						"date": "10/21/2025",
 						"fileName": "Sakura_Rig_GUI_V3.1.0.zip",
 						"sourceCode": "",
@@ -178,7 +178,7 @@
 					},
 					{
 						"version": "V3.0.0",
-						"label": "SACR Interface V3.0.0",
+						"label": "Sakura Rig Utilities V3.0.0",
 						"date": "12/10/2025",
 						"fileName": "Sakura_Rig_GUI_V3.0.0.zip",
 						"sourceCode": "",
@@ -196,7 +196,7 @@
 					},
 					{
 						"version": "V2.0.0",
-						"label": "SACR Interface V2.0.0",
+						"label": "Sakura Rig Utilities V2.0.0",
 						"date": "10/04/2025",
 						"fileName": "Sakura_Rig_GUI_V2.0.0.zip",
 						"sourceCode": "",
@@ -214,7 +214,7 @@
 					},
 					{
 						"version": "V1.2.0",
-						"label": "SACR Interface V1.2.0",
+						"label": "Sakura Rig Utilities V1.2.0",
 						"date": "09/15/2025",
 						"fileName": "Sakura_Rig_GUI_V1.2.0.zip",
 						"sourceCode": "",
@@ -232,7 +232,7 @@
 					},
 					{
 						"version": "V1.1.0",
-						"label": "SACR Interface V1.1.0",
+						"label": "Sakura Rig Utilities V1.1.0",
 						"date": "08/20/2025",
 						"fileName": "Sakura_Rig_GUI_V1.1.0.zip",
 						"sourceCode": "",
@@ -250,7 +250,7 @@
 					},
 					{
 						"version": "V1.0.1",
-						"label": "SACR Interface V1.0.1",
+						"label": "Sakura Rig Utilities V1.0.1",
 						"date": "07/29/2025",
 						"fileName": "Sakura_Rig_GUI_V1.0.1.zip",
 						"sourceCode": "",
@@ -268,7 +268,7 @@
 					},
 					{
 						"version": "V1.0.0",
-						"label": "SACR Interface V1.0.0",
+						"label": "Sakura Rig Utilities V1.0.0",
 						"date": "07/21/2025",
 						"fileName": "Sakura_Rig_GUI_V1.0.0.zip",
 						"sourceCode": "",
@@ -280,7 +280,7 @@
 						"builds": [
 							{
 								"size": "3.8 KB",
-								"notes": "Initial release of the Sakura Rig Interface with support for SACR R7.2.1."
+								"notes": "Initial release of Sakura Rig Utilities with support for SACR R7.2.1."
 							}
 						]
 					}
@@ -293,7 +293,7 @@
 				"versions": [
 					{
 						"version": "V4.0.0-Alpha 3",
-						"label": "SACR Interface V4.0.0-Alpha 3",
+						"label": "Sakura Rig Utilities V4.0.0-Alpha 3",
 						"date": "05/08/2026",
 						"fileName": "Sakura_Rig_GUI_Dev-4.0.0-Alpha-3.zip",
 						"sourceCode": "",
@@ -311,7 +311,7 @@
 					},
 					{
 						"version": "V4.0.0-Alpha 2",
-						"label": "SACR Interface V4.0.0-Alpha 2",
+						"label": "Sakura Rig Utilities V4.0.0-Alpha 2",
 						"date": "05/05/2026",
 						"fileName": "Sakura_Rig_GUI_Dev-4.0.0_Alpha_2.zip",
 						"sourceCode": "",
@@ -329,7 +329,7 @@
 					},
 					{
 						"version": "V4.0.0-Alpha 1",
-						"label": "SACR Interface V4.0.0-Alpha 1",
+						"label": "Sakura Rig Utilities V4.0.0-Alpha 1",
 						"date": "05/05/2026",
 						"fileName": "Sakura_Rig_GUI_Dev-4.0.0_Alpha_1.zip",
 						"sourceCode": "",

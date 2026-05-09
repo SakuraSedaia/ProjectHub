@@ -39,6 +39,7 @@ export default function PluginHero(props: PluginHeroProps) {
       <div class={"hero-content"}>
         <h1>{props.title}</h1>
         <p>{props.tagline}</p>
+        {props.children}
         <p class={"supported-platforms"} style={"display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;"}>
           <span>Supported in:</span>
           <For each={platformList()}>
@@ -66,7 +67,6 @@ export default function PluginHero(props: PluginHeroProps) {
             }}
           </For>
         </p>
-        {props.children}
       </div>
       <div class={"background-fade"} />
     </header>

@@ -3,7 +3,7 @@ import addonIndex from "~/json-data/addon-index.json";
 import DownloadPlugins from "../../../components/ui/download-plugins";
 
 export default function Downloads() {
-  const data = addonIndex.SakuraRigInterface;
+  const data = addonIndex.SakuraRigUtilities;
   const branches = data.branches;
 
   return (

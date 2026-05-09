@@ -25,7 +25,7 @@ portfolio site.
 
 Currently included:
 
-- **SACR Interface** — Blender extension for the Sakura Minecraft Character
+- **Sakura Rig Utilities** — Blender extension for the Sakura Minecraft Character
   Rig (downloads, instructions, changelogs).
 - **Blender Development** — PyCharm plugin for developing and debugging
   Blender extensions (downloads, instructions, known issues).

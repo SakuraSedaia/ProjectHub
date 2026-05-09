@@ -31,11 +31,11 @@ export default function NavSidebar() {
         <NavRouter class={"nav-internal"}>
           <NavItem path={"/"}>Home</NavItem>
           <NavSubRouter title={"Plugins"}>
-            <NavItem path={"/sacr-interface"}>SACR Interface</NavItem>
+            <NavItem path={"/sakura-rig-utilities"}>Rig Utilities</NavItem>
             <NavItem path={"/blender-development"}>Blender Development</NavItem>
           </NavSubRouter>
           <NavSubRouter title={"Assets"}>
-            <NavItem path={"/sakura-character-rig"}>Sakura Character Rig</NavItem>
+            <NavItem path={"/sakura-character-rig"}>Character Rig</NavItem>
           </NavSubRouter>
         </NavRouter>
         
