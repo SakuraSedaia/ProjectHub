@@ -1,4 +1,3 @@
-import { Title } from "@solidjs/meta";
 import { ErrorBoundary, Suspense } from "solid-js";
 import SEO from "~/components/seo";
 import Community from "~/sections/index/community";

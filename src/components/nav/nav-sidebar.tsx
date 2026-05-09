@@ -16,7 +16,7 @@ export default function NavSidebar() {
     }
   };
   
-  const [year, setYear] = createSignal(new Date().getFullYear());
+  const [year] = createSignal(new Date().getFullYear());
   
   onMount(() => {
     document.addEventListener("click", handleClickOutside);
