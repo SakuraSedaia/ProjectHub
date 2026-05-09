@@ -11,7 +11,7 @@ export default function About() {
         </div>
         <div class={"standard-container"}>
           <p>
-            The Sakura Rig Utilities extension is a utility toolkit for Blender designed to streamline the management of Python-based rig interfaces. It provides essential tools for projects like <A href="/asset/sakura-character-rig" class={"link"}>my own Sakura Character Rig (SACR)</A>, <a href="https://www.youtube.com/watch?v=XZZUk8BqVOE" class={"link"} target="_blank">Endertainer's MCS2 rig</a>, <a href="https://www.youtube.com/watch?v=8mnU203_S_s" class={"link"} target="_blank">Timy's Character Rig V7</a>, and many other advanced rigs. Built using Blender's Python API, the addon includes several key features:
+            The Sakura Rig Utilities extension is a utility toolkit for Blender designed to streamline the management of Python-based rig interfaces. It provides essential tools and utilities for managing the <A href="/asset/sakura-character-rig" class={"link"}>Sakura Character Rig (SACR)</A> Built using Blender's Python API, the addon includes several key features:
           </p>
 
           <div class={"feature-grid"}>
