@@ -20,6 +20,10 @@ export default function IconBundle(props: IconBundleProps) {
     "globe": "bi-globe",
     "arrow-down": "arrow-down",
     "hamburger": "hamburger",
+    "image-management": "image-management",
+    "rig-renaming": "rig-renaming",
+    "skin-downloader": "skin-downloader",
+    "quick-access": "quick-access",
   };
   
   const iconName = icons[props.name];
