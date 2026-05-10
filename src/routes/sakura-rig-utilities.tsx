@@ -1,5 +1,6 @@
 import { ErrorBoundary, Suspense } from "solid-js";
-import HeroSection from "../components/ui/hero-section";
+import SEO from "~/components/seo";
+import HeroSection from "~/components/ui/hero-section";
 import About from "~/sections/plugins/sakura-rig-utilities/about";
 import Downloads from "~/sections/plugins/sakura-rig-utilities/downloads";
 import Instructions from "~/sections/plugins/sakura-rig-utilities/instructions";
@@ -11,6 +12,10 @@ export default function SakuraRigUtilities() {
     <ErrorBoundary fallback={(err) => <p>Failed to load page: {err.message}</p>}>
       <Suspense fallback={<p>Loading...</p>}>
         <article class={"plugin-page sru-container theme-blender"}>
+          <SEO
+            title={"Sakura Rig Utilities"}
+            description={"A custom Blender interface designed to streamline and enhance your workflow when using the Sakura Minecraft Character Rig."}
+          />
           <HeroSection
             title={"Sakura Rig Utilities"}
             description={"A custom Blender interface designed to streamline and enhance your workflow when using the Sakura Minecraft Character Rig."}

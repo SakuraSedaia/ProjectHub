@@ -1,7 +1,7 @@
 import { cache, createAsync, useParams, A } from "@solidjs/router";
 import { Show, Suspense, ErrorBoundary, For, createMemo } from "solid-js";
 import { SolidMarkdown } from "solid-markdown";
-import HeroSection from "../../components/ui/hero-section";
+import HeroSection from "~/components/ui/hero-section";
 import SEO from "~/components/seo";
 import "~/styles/pages/changelog.scss";
 
@@ -123,7 +123,7 @@ export default function Changelog() {
                   description={`Detailed changelog and update history for ${title()}.`}
                   image={"/images/headers/sr-gui.jxl"}
                 />
-                <PluginHero
+                <HeroSection
                   title={`Changelog: ${title()}`}
                   description={`Detailed changelog and update history for ${title()}.`}
                   tagline={"Track the latest changes and improvements."}

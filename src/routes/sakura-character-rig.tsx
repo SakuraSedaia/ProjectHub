@@ -1,5 +1,6 @@
 import { ErrorBoundary, Suspense } from "solid-js";
-import HeroSection from "../components/ui/hero-section";
+import SEO from "~/components/seo";
+import HeroSection from "~/components/ui/hero-section";
 import DeprecationNotice from "~/components/ui/deprecation-notice";
 import About from "~/sections/assets/sakura-character-rig/about";
 import Downloads from "~/sections/assets/sakura-character-rig/downloads";
@@ -11,6 +12,10 @@ export default function SakuraCharacterRig() {
     <ErrorBoundary fallback={(err) => <div class="standard-container">Error: {err.message}</div>}>
       <Suspense fallback={<div class="standard-container">Loading...</div>}>
         <article class={"plugin-page sakura-character-rig-container theme-blender"}>
+          <SEO
+            title={"Sakura Character Rig"}
+            description={"Download and learn how to use the Sakura Character Rig, a highly flexible and powerful tool for Minecraft animations."}
+          />
           <HeroSection
             title={"Sakura Character Rig"}
             description={"Download and learn how to use the Sakura Character Rig, a highly flexible and powerful tool for Minecraft animations."}
