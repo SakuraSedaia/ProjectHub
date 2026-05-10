@@ -1,12 +1,12 @@
 import { ErrorBoundary, Suspense } from "solid-js";
 import PluginHero from "~/components/ui/plugin-hero";
 import DeprecationNotice from "~/components/ui/deprecation-notice";
-import About from "~/sections/assets/sakura-character-rig/about";
-import Downloads from "~/sections/assets/sakura-character-rig/downloads";
-import Addon from "~/sections/assets/sakura-character-rig/addon";
-import "~/styles/pages/sakura-character-rig.scss";
+import About from "~/sections/assets/sacr-interface/about";
+import Downloads from "~/sections/assets/sacr-interface/downloads";
+import Addon from "~/sections/assets/sacr-interface/addon";
+import "~/styles/pages/sacr-interface.scss";
 
-export default function SakuraCharacterRig() {
+export default function SacrInterface() {
   return (
     <ErrorBoundary fallback={(err) => <div class="standard-container">Error: {err.message}</div>}>
       <Suspense fallback={<div class="standard-container">Loading...</div>}>
