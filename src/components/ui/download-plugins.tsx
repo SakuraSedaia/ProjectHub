@@ -157,12 +157,13 @@ export default function DownloadPlugins(props: DownloadPluginProps) {
 	});
 
 	return (
-		<section class={"download-container"}>
-			<header class={"heading"}>
+		<div class={"download-plugins"}>
+			<div class={"heading"}>
 				<h2>{branch.description}</h2>
 				<hr />
+			</div>
 				
-				<div class={"download-select"}>
+			<div class={"download-select"}>
 					<div class={"label"}>Version:</div>
 					<div class={"custom-select"} ref={dropdownRef}>
 						<div class={`select-trigger ${isOpen() ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen())}>
@@ -204,11 +205,13 @@ export default function DownloadPlugins(props: DownloadPluginProps) {
 					</div>
 				</Show>
 
-				<div class={`download-info ${currentVariations().length <= 1 ? 'no-tabs' : ''}`}>
-					<div class={`download-link ${build()?.disabled ? 'disabled' : ''}`}>
-						<DownloadLink path={filePath()} disabled={build()?.disabled}>Download {build()?.label || "Plugin"}</DownloadLink>
-						<a href={build()?.sourceUrl} target="_blank" style={"margin-left: 10px"}>Download Source</a>
-					</div>
+			<div class={`download-info ${currentVariations().length <= 1 ? 'no-tabs' : ''}`}>
+				<div class={`download-link ${build()?.disabled ? 'disabled' : ''}`}>
+					<DownloadLink path={filePath()} disabled={build()?.disabled}>Download {build()?.label || "Plugin"}</DownloadLink>
+					<Show when={build()?.sourceUrl}>
+						<a href={build()?.sourceUrl} target="_blank" class={"link-secondary"}>Download Source</a>
+					</Show>
+				</div>
 					
 					<table>
 						<thead>
@@ -228,26 +231,25 @@ export default function DownloadPlugins(props: DownloadPluginProps) {
 					</table>
 				</div>
 
-				<Show when={build()?.compatibility}>
-					<div class={"compatibility-footnote"}>
-						<p>Compatible with {props.software} versions: {build()?.compatibility?.minVersion} to {build()?.compatibility?.maxVersion}</p>
-					</div>
-				</Show>
-				<hr />
-				<div class={"download-notes"}>
-					<h2>Changes Summary</h2>
-					<p>{build()?.notes}</p>
-					<A href={`/changelog/${build()?.changelog || build()?.fileName?.split('.')[0] || `${branch.namePrefix}_${build()?.version}`}`} class={"link"}>View full Changelog</A>
-					<Show when={props.repo}>
-						{" - "}
-						<a href={props.repo} target="_blank" class={"link"}>Repository</a>
-					</Show>
-					<Show when={build()?.sourceCode}>
-						{" - "}
-						<a href={build()?.sourceCode} target="_blank" class={"link"}>Source Code</a>
-					</Show>
+			<Show when={build()?.compatibility}>
+				<div class={"compatibility-footnote"}>
+					<p>Compatible with {props.software} versions: {build()?.compatibility?.minVersion} to {build()?.compatibility?.maxVersion}</p>
 				</div>
-			</header>
-		</section>
+			</Show>
+
+			<div class={"download-notes"}>
+				<h2>Changes Summary</h2>
+				<p>{build()?.notes}</p>
+				<A href={`/changelog/${build()?.changelog || build()?.fileName?.split('.')[0] || `${branch.namePrefix}_${build()?.version}`}`} class={"link"}>View full Changelog</A>
+				<Show when={props.repo}>
+					{" - "}
+					<a href={props.repo} target="_blank" class={"link"}>Repository</a>
+				</Show>
+				<Show when={build()?.sourceCode}>
+					{" - "}
+					<a href={build()?.sourceCode} target="_blank" class={"link"}>Source Code</a>
+				</Show>
+			</div>
+		</div>
 	);
 }
