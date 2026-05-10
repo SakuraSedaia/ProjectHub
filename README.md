@@ -63,7 +63,7 @@ Currently included:
 | --- | --- |
 | `src/routes/` | File-based routes (pages). |
 | `src/sections/` | Page-specific sections, mirroring route names. |
-| `src/components/` | Reusable UI components (`IconBundle`, `PluginHero`, nav, etc.). |
+| `src/components/` | Reusable UI components (`IconBundle`, `HeroSection`, nav, etc.). |
 | `src/json-data/` | JSON sources for plugin/version metadata. |
 | `src/styles/` | SCSS framework, variables, page and component partials. |
 | `public/images/` | Static images (headers, card backgrounds, vectors, platform icons). |

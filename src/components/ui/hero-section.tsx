@@ -25,7 +25,7 @@ interface PluginHeroProps {
   children?: JSX.Element;
 }
 
-export default function PluginHero(props: PluginHeroProps) {
+export default function HeroSection(props: PluginHeroProps) {
   const platformList = (): SupportedPlatform[] => {
     if (!props.supportedPlatform) return [];
     return Array.isArray(props.supportedPlatform)

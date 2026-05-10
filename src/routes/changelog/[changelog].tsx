@@ -1,7 +1,7 @@
 import { cache, createAsync, useParams, A } from "@solidjs/router";
 import { Show, Suspense, ErrorBoundary, For, createMemo } from "solid-js";
 import { SolidMarkdown } from "solid-markdown";
-import PluginHero from "~/components/ui/plugin-hero";
+import HeroSection from "../../components/ui/hero-section";
 import SEO from "~/components/seo";
 import "~/styles/pages/changelog.scss";
 
