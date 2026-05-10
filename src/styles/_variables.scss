@@ -265,6 +265,7 @@
   --color-rose-800-val: 335 62% 34%;
   --color-rose-900-val: 333 55% 29%;
   --color-rose-950-val: 335 77% 14%;
+
   /* PyCharm branding colors */
   --color-pycharm-green-val: 157 100% 42%;
   --color-pycharm-yellow-val: 59 88% 52%;
@@ -274,12 +275,12 @@
   --color-blender-blue-val: 211 56% 34%;
 
   // Semantic Theme Variables
-  --bg-primary-val: var(--color-zinc-950-val);
+  --bg-primary-val: var(--color-zinc-900-val);
   --tx-primary-val: var(--color-zinc-50-val);
-  --bg-secondary-val: var(--color-zinc-900-val);
-  --tx-secondary-val: var(--color-zinc-400-val);
+  --bg-secondary-val: var(--color-zinc-800-val);
+  --tx-secondary-val: var(--color-zinc-300-val);
   --primary-color-val: var(--color-pink-400-val);
-  --border-color-val: var(--color-zinc-800-val);
+  --border-color-val: var(--color-zinc-700-val);
 
   --bg-primary: hsl(var(--bg-primary-val));
   --tx-primary: hsl(var(--tx-primary-val));
@@ -296,13 +297,4 @@
   // Blender Branding
   --blender-orange: hsl(var(--color-blender-orange-val));
   --blender-blue: hsl(var(--color-blender-blue-val));
-}
-
-[data-theme='dark'] {
-  --bg-primary-val: var(--color-zinc-950-val);
-  --tx-primary-val: var(--color-zinc-50-val);
-  --bg-secondary-val: var(--color-zinc-900-val);
-  --tx-secondary-val: var(--color-zinc-400-val);
-  --primary-color-val: var(--color-pink-400-val);
-  --border-color-val: var(--color-zinc-800-val);
 }

@@ -139,6 +139,7 @@ export default function DownloadAssets(props: DownloadAssetsProps) {
     <div class={"download-assets"}>
       <div class={"heading"}>
         <h2>{branch.description}</h2>
+        <hr />
       </div>
       <div class={"download-select"}>
         <div class={"label"}>Version:</div>

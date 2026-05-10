@@ -90,6 +90,12 @@ div.viewport {
           a {
             color: white;
             text-decoration: none;
+            transition: color 0.1s ease, background-color 0.1s ease;
+
+            &:hover {
+              color: var(--primary-color);
+              background-color: hsla(0, 0%, 100%, 0.05);
+            }
 
             span {
               overflow: hidden;
