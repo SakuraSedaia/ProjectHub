@@ -41,7 +41,7 @@ h2 {
 }
 
 @mixin shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.2);
 }
 
 @mixin radius-lg {
@@ -109,7 +109,7 @@ h2 {
   align-items: flex-end;
   padding: 0.25rem;
   border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
   
   .color-label {
     font-size: 0.75rem;
