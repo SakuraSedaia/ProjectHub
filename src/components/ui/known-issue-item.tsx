@@ -4,7 +4,7 @@ import { JSX } from "solid-js";
 interface KnownIssueItemProps {
 	issueLink: string;
 	title: string;
-	confirmDate: string;
+	confirmed: string;
 	children?: JSX.Element;
 }
 
@@ -28,7 +28,7 @@ export default function KnownIssueItem(props: KnownIssueItemProps) {
 					</Tooltip>
 				)}
 			</h3>
-			<h4>Confirmed on {props.confirmDate}</h4>
+			<h4>Confirmed on {props.confirmed}</h4>
 			<div>
 				{props.children}
 			</div>
