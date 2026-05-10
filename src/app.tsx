@@ -1,4 +1,4 @@
-import { MetaProvider, Title } from "@solidjs/meta";
+import { MetaProvider, Title, Link } from "@solidjs/meta";
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { ErrorBoundary, Suspense } from "solid-js";
@@ -17,6 +17,8 @@ export default function App() {
           <MetaProvider>
             <Vercel />
             <Title>Project Hub</Title>
+            <Link rel="icon" type="image/x-icon" href="/favicon.ico?v=1" />
+            <Link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1" />
             <div class={`viewport ${sidebarOpen() ? "sidebar-open" : "sidebar-closed"}`}>
               <RibbonHeader />
               <NavSidebar />
