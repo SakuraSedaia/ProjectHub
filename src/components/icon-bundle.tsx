@@ -24,6 +24,8 @@ export default function IconBundle(props: IconBundleProps) {
     "rig-renaming": "rig-renaming",
     "skin-downloader": "skin-downloader",
     "quick-access": "quick-access",
+    "blender-bw": "logo-blender-bw",
+    "python-bw": "logo-python-bw"
   };
   
   const iconName = icons[props.name];
