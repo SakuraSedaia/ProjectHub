@@ -19,7 +19,7 @@ const projectCards = [
     imageClass: "product-blender-dev",
   },
   {
-    title: "Sakura Minecraft Character Rig",
+    title: "Sakura Character Rig",
     description:
       "The flagship rig Sakura Rig Utilities is built around — a fully featured Minecraft character rig for animators and artists.",
     cta: "Learn more",

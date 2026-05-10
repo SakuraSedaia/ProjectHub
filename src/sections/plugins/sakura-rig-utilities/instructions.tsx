@@ -18,7 +18,7 @@ export default function Instructions() {
                 <li>If prompted, enable <strong>Online Access</strong>.</li>
                 <li>Search for <strong>"Sakura Rig Utilities"</strong> and click Install.</li>
                 <li>Ensure the addon is enabled in your preferences.</li>
-                <li>Download a compatible rig from the <A href="/asset/sakura-character-rig" class={"link"}>SACR page</A>.</li>
+                <li>Download a compatible rig from the <A href="/sakura-character-rig" class={"link"}>SACR page</A>.</li>
               </ol>
             </div>
             
@@ -30,7 +30,7 @@ export default function Instructions() {
                 <li>In Blender, go to <strong>Edit &gt; Preferences &gt; Add-ons</strong>.</li>
                 <li>Click the arrow in the top-right and select <strong>Install from Disk...</strong></li>
                 <li>Choose the downloaded file and ensure it's enabled.</li>
-                <li>Download a compatible rig from the <A href="/asset/sakura-character-rig" class={"link"}>SACR page</A>.</li>
+                <li>Download a compatible rig from the <A href="/sakura-character-rig" class={"link"}>SACR page</A>.</li>
               </ol>
             </div>
           </div>
