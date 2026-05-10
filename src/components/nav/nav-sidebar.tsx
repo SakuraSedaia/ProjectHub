@@ -47,19 +47,6 @@ export default function NavSidebar() {
         
         <div class={"license-note"}>
           <div class={"copyright"}>© {year()} Sedaia Designs. All Rights Reserved.</div>
-          
-          <span>
-            Website licensed under{" "}
-            <a
-              href={"https://www.gnu.org/licenses/gpl-3.0.en.html#license-text"}
-              class={"link"}
-              target={"_blank"}
-              rel={"noopener noreferrer"}
-            >
-              GNU GPL v3.0
-            </a>
-            ; hosted projects licensed separately.
-          </span>
         </div>
       </div>
     </nav>
