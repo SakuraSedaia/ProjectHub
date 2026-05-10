@@ -1,4 +1,4 @@
-import { For, JSX } from "solid-js";
+import { For, JSX, Show } from "solid-js";
 import SEO from "~/components/seo";
 
 type SupportedPlatform = "blender" | "pycharm";
@@ -40,33 +40,35 @@ export default function HeroSection(props: PluginHeroProps) {
         <h1>{props.title}</h1>
         <p>{props.tagline}</p>
         {props.children}
-        <p class={"supported-platforms"} style={"display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;"}>
-          <span>Supported in:</span>
-          <For each={platformList()}>
-            {(platform) => {
-              const meta = platforms[platform];
-              if (!meta) return null;
-              return (
-                <a
-                  href={meta.href}
-                  target={"_blank"}
-                  rel={"noopener noreferrer"}
-                  aria-label={`${meta.label} website`}
-                  style={"display: inline-flex; align-items: center;"}
-                >
-                  <img
-                    class={`platform-icon platform-${platform}`}
-                    src={meta.src}
-                    alt={`${meta.label} logo`}
-                    title={`Supported on ${meta.label}`}
-                    height={"50px"}
-                    style={"vertical-align: middle;"}
-                  />
-                </a>
-              );
-            }}
-          </For>
-        </p>
+        <Show when={platformList().length > 0}>
+          <p class={"supported-platforms"} style={"display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px;"}>
+            <span>Supported in:</span>
+            <For each={platformList()}>
+              {(platform) => {
+                const meta = platforms[platform];
+                if (!meta) return null;
+                return (
+                  <a
+                    href={meta.href}
+                    target={"_blank"}
+                    rel={"noopener noreferrer"}
+                    aria-label={`${meta.label} website`}
+                    style={"display: inline-flex; align-items: center;"}
+                  >
+                    <img
+                      class={`platform-icon platform-${platform}`}
+                      src={meta.src}
+                      alt={`${meta.label} logo`}
+                      title={`Supported on ${meta.label}`}
+                      height={"50px"}
+                      style={"vertical-align: middle;"}
+                    />
+                  </a>
+                );
+              }}
+            </For>
+          </p>
+        </Show>
       </div>
       <div class={"background-fade"} />
     </header>
