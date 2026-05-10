@@ -1,4 +1,5 @@
 import { NoHydration } from "solid-js/web";
+import IconBundle from "~/components/icon-bundle";
 
 export default function BlenderDevAbout() {
   return (
@@ -11,15 +12,37 @@ export default function BlenderDevAbout() {
           <p>
             Blender Development for PyCharm is a comprehensive plugin that streamlines the creation and debugging of Blender extensions by enabling seamless launch and real-time reloading directly from the IDE. It features a dedicated management system for multiple Blender versions (LTS 4.2+, 5.0, & 5.1) and more.
           </p>
-          <h2 class={"styled-heading"}>Features</h2>
-          <ul class={"styled-list"}>
-            <li><strong>Integrated Blender Management:</strong> A dedicated system for discovering, downloading, and managing multiple Blender versions (LTS 4.2+ and newer) with automatic linter configuration and sandbox isolation.</li>
-            <li><strong>Real-Time Extension Development:</strong> Robust auto-reload capabilities powered by bidirectional TCP communication, allowing for instant feedback and live updates directly within Blender as you save your code.</li>
-            <li><strong>Automated Project Lifecycle:</strong> Streamlined project creation via an integrated wizard that handles multi-source directory management, manifest configuration, and automated Python virtual environment setup using <strong>uv</strong>.</li>
-            <li><strong>Project Maintenance & Traits:</strong> Built-in tools for managing existing projects, including the generation of agent guidelines, run configurations, <code>.gitignore</code> templates, and GPL licenses for existing projects.</li>
-            <li><strong>Platform-Aware Validation:</strong> Smart detection of system-specific requirements, such as filesystem execution permissions (e.g., <code>noexec</code> on Linux), with guided resolution steps.</li>
-            <li><strong>Global Ready:</strong> Comprehensive internationalization support for 11 languages, ensuring a native experience for developers worldwide.</li>
-          </ul>
+
+          <div class={"feature-grid"}>
+            <div class={"feature-card"}>
+              <div class={"feature-icon"}>
+                <IconBundle name={"blender-bw"} />
+              </div>
+              <h3>Blender Management</h3>
+              <p>Dedicated system for discovering, downloading, and managing multiple Blender versions with automatic linter configuration.</p>
+            </div>
+            <div class={"feature-card"}>
+              <div class={"feature-icon"}>
+                <IconBundle name={"quick-access"} />
+              </div>
+              <h3>Real-Time Development</h3>
+              <p>Robust auto-reload capabilities powered by bidirectional TCP communication for instant feedback in Blender.</p>
+            </div>
+            <div class={"feature-card"}>
+              <div class={"feature-icon"}>
+                <IconBundle name={"codeberg"} />
+              </div>
+              <h3>Automated Lifecycle</h3>
+              <p>Streamlined project creation via an integrated wizard that handles multi-source directories and manifest configuration.</p>
+            </div>
+            <div class={"feature-card"}>
+              <div class={"feature-icon"}>
+                <IconBundle name={"globe"} />
+              </div>
+              <h3>Global Ready</h3>
+              <p>Comprehensive internationalization support for 11 languages, ensuring a native experience for developers worldwide.</p>
+            </div>
+          </div>
 
           <h2 class={"styled-heading"}>License</h2>
           <p>

@@ -9,14 +9,16 @@ export default function BlenderDevIssues() {
   return (
     <NoHydration>
       <section id={"issues"}>
-        <div class={"heading"}>
-          <h1>Issues and Feature Requests</h1>
-        </div>
         <div class={"standard-container"}>
-          <p>
-            For any bugs, feature requests, or general issues, please file a report on the <a href={issuesUrl} class={"link"} target={"_blank"}>Codeberg repository</a>.
-          </p>
-	        
+          <div class={"issues-box"}>
+            <h1>Found a Bug?</h1>
+            <p>
+              For any bugs, feature requests, or general issues, please file a report on the Codeberg repository so we can address them.
+            </p>
+            <a href={issuesUrl} class={"btn-primary"} target={"_blank"}>
+              Report an Issue
+            </a>
+          </div>
         </div>
       </section>
     </NoHydration>
