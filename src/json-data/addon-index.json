@@ -42,12 +42,12 @@
 					{
 						"version": "0.6.0 Alpha",
 						"label": "0.6.0 Alpha",
-						"date": "04/26/2026",
 						"fileName": "BlenderPythonDevelopment-0.6.0-SNAPSHOT.zip",
 						"sourceCode": "",
 						"changelog": "BlenderDevelopment-0.6.0-SNAPSHOT",
 						"builds": [
 							{
+								"date": "04/26/2026",
 								"size": "3.8 MB",
 								"license": "GNU/GPL V3",
 								"notes": "Blender Development for PyCharm 0.6.0 significantly strengthens the foundation of the plugin. The move to uv, the improved project setup tools, the safer execution flow, and the extensive threading and process fixes make this release faster, more predictable, and better suited for real-world Blender extension development across Windows, macOS, and Linux.",
@@ -58,12 +58,12 @@
 					{
 						"version": "0.5.0 Alpha",
 						"label": "0.5.0 Alpha",
-						"date": "03/15/2026",
 						"fileName": "BlenderPythonDevelopment-0.5.0-SNAPSHOT.zip",
 						"sourceCode": "",
 						"changelog": "BlenderDevelopment-0.5.0-SNAPSHOT",
 						"builds": [
 							{
+								"date": "03/15/2026",
 								"size": "3.54 MB",
 								"license": "GNU/GPL V3",
 								"notes": "V0.5.0 Alpha refines the Linter Setup, removes the automated Interpreter Configuration, Reorganizes the UI, and adds support for Blender 5.1.",
@@ -74,12 +74,12 @@
 					{
 						"version": "0.4.0 Alpha",
 						"label": "0.4.0 Alpha",
-						"date": "03/15/2026",
 						"fileName": "BlenderPythonDevelopment-0.4.0-SNAPSHOT.zip",
 						"sourceCode": "",
 						"changelog": "BlenderDevelopment-0.4.0-SNAPSHOT",
 						"builds": [
 							{
+								"date": "03/15/2026",
 								"size": "3.54 MB",
 								"license": "GNU/GPL V3",
 								"notes": "V0.4.0 Alpha introduces integrated linter setup with fake-bpy-module, automated Python interpreter configuration, and significant improvements to the Blender downloader and UI management.",
@@ -90,12 +90,12 @@
 					{
 						"version": "0.3.0 Alpha",
 						"label": "0.3.0 Alpha",
-						"date": "03/08/2026",
 						"fileName": "BlenderPythonDevelopment-0.3.0-SNAPSHOT.zip",
 						"sourceCode": "",
 						"changelog": "BlenderDevelopment-0.3.0-SNAPSHOT",
 						"builds": [
 							{
+								"date": "03/08/2026",
 								"size": "3.52 MB",
 								"license": "GNU/GPL V3",
 								"notes": "V0.3.0 improves on feature stability while adding Blender Status Bar widget, multi-source folder support, and full internationalization for 11 languages.",
@@ -106,12 +106,12 @@
 					{
 						"version": "0.2.0 Alpha",
 						"label": "0.2.0 Beta",
-						"date": "03/02/2026",
 						"fileName": "BlenderDevelopment-0.2.0-SNAPSHOT.zip",
 						"sourceCode": "",
 						"changelog": "BlenderDevelopment-0.2.0-SNAPSHOT",
 						"builds": [
 							{
+								"date": "03/02/2026",
 								"size": "3.85 MB",
 								"license": "GNU/GPL V3",
 								"notes": "V0.2.0 introduces a real-time status bar widget, a specialized project type for extensions, and cross-platform detection improvements.",
@@ -122,12 +122,12 @@
 					{
 						"version": "0.1.0 Alpha",
 						"label": "0.1.0 Alpha",
-						"date": "02/28/2026",
 						"fileName": "BlenderDevelopment-0.1.0-SNAPSHOT.zip",
 						"sourceCode": "",
 						"changelog": "BlenderDevelopment-0.1.0-SNAPSHOT",
 						"builds": [
 							{
+								"date": "02/28/2026",
 								"size": "3.44 MB",
 								"license": "GNU/GPL V3",
 								"notes": "Initial Release of the Blender Development Plugin, featuring basic support for sandboxing, version management, and hot-reloading.",
@@ -294,7 +294,6 @@
 					{
 						"version": "V4.0.0-Alpha 3",
 						"label": "Sakura Rig Utilities V4.0.0-Alpha 3",
-						"date": "05/08/2026",
 						"fileName": "Sakura_Rig_GUI_Dev-4.0.0-Alpha-3.zip",
 						"sourceCode": "",
 						"changelog": "Sakura_Rig_GUI_V4.0.0_Alpha_3",
@@ -304,6 +303,7 @@
 						},
 						"builds": [
 							{
+								"date": "05/08/2026",
 								"size": "72.4 KB",
 								"notes": "Feature Refinements, Bug Fixes, and UI improvements."
 							}
@@ -312,7 +312,6 @@
 					{
 						"version": "V4.0.0-Alpha 2",
 						"label": "Sakura Rig Utilities V4.0.0-Alpha 2",
-						"date": "05/05/2026",
 						"fileName": "Sakura_Rig_GUI_Dev-4.0.0_Alpha_2.zip",
 						"sourceCode": "",
 						"changelog": "Sakura_Rig_GUI_V4.0.0_Alpha_2",
@@ -322,6 +321,7 @@
 						},
 						"builds": [
 							{
+								"date": "05/05/2026",
 								"size": "53.6 KB",
 								"notes": "Feature Additions and Refinements"
 							}
@@ -330,7 +330,6 @@
 					{
 						"version": "V4.0.0-Alpha 1",
 						"label": "Sakura Rig Utilities V4.0.0-Alpha 1",
-						"date": "05/05/2026",
 						"fileName": "Sakura_Rig_GUI_Dev-4.0.0_Alpha_1.zip",
 						"sourceCode": "",
 						"changelog": "Sakura_Rig_GUI_V4.0.0_Alpha_1",
@@ -340,6 +339,7 @@
 						},
 						"builds": [
 							{
+								"date": "05/05/2026",
 								"size": "50.5 KB",
 								"notes": "Initial development version"
 							}
