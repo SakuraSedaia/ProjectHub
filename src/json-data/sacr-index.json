@@ -49,13 +49,22 @@
 						"version": "E7.5.0",
 						"builds": [
 							{
+								"label": "RC 2",
+								"date": "6/26/2026",
+								"fileName": "SACR.E7.5.0-RC2.zip",
+								"size": "1.1mb",
+								"notes": "UI Script located inside Archive, can be run as a script or installed as an Addon",
+								"license": "MIT"
+							},
+							{
 								"label": "RC 1",
 								"date": "5/18/2026",
-								"fileName": "SACR.E7.5.0.RC1.zip",
+								"fileName": "SACR.E7.5.0-RC1.zip",
 								"size": "1.1mb",
 								"notes": "UI Script located inside Archive, can be run as a script or installed as an Addon",
 								"license": "MIT"
 							}
+
 						]
 					},
 					{
