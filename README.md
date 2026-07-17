@@ -1,3 +1,6 @@
+> [!NOTE] 
+> This repository is being archived as all it's content is being moved into the main site as a sub-route. The current iteration will remain active until the new route is complete on the main website, and then the subdomain will be ported to a subdomain of the main repository.
+
 # Sakura's Project Hub
 
 A central hub for all of [SakuraSedaia](https://codeberg.org/SakuraSedaia)'s
